@@ -99,7 +99,6 @@
 - each Play runs zero to many Tasks
 - each Task runs exactly one Ansible module
 - each Play runs zero to many Roles
-
 </pre>
 
 ## Info - Ansible Controller Machine ( ACM )
@@ -114,3 +113,11 @@
 - it can be an unix machine
 - it can be a Mac machine
 - it can be Network routers/switches
+
+## Info - Ansible Inventory
+<pre>
+- it is a text file, who looks somewhat similar INI file
+- it has the connection details of Ansible Nodes
+- if the Ansible node happens to be a Window machine, then it will have WinRM connection details, login credentials, etc
+- if the Ansible node happens to be a Unix/Linux/Mac/Switches/routers, then it have SSH connection details, login credentials, etc.,
+</pre>
