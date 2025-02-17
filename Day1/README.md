@@ -247,3 +247,17 @@ ansible-doc -l | grep mssql
 Expected output
 ![image](https://github.com/user-attachments/assets/f34b01c7-398b-4a00-860f-670295323a42)
 
+## Lab - Multiple inventory
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day1/ansible
+ls
+cat inventory
+cat hosts
+ansible -i inventory all -m ping
+ansible -i hosts all -m setup
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/7d9ccfb9-4831-4ca7-bdd6-37dcd7279e62)
