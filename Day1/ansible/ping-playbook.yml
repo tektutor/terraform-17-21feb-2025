@@ -1,5 +1,12 @@
 - name: This playbook will ping the ansible nodes
   hosts: all
+  gather_facts: no
   tasks:
   - name: Ping ansible node
+    ping:
+
+- name: This is a second play in the same playbook
+  hosts: localhost
+  tasks:
+  - name: Ping localhost
     ping:
