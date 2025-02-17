@@ -106,3 +106,11 @@
 - the machine where Ansible is installed is called Ansible Controller Machine
 - officially only a Linux machine can be an Ansible Controller Machine
 - Windows machines can't be an Ansible Controller Machine
+- the machine where we run the ansible playbook is called Ansible Controller Machine
+
+## Info - Ansible Node ( these are the machines where Ansible will perform the automation )
+- it can be a Windows machine
+- it can be a Linux machine
+- it can be an unix machine
+- it can be a Mac machine
+- it can be Network routers/switches
