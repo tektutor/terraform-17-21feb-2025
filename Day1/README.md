@@ -154,5 +154,52 @@ Let's build a custom build image
 cd ~/terraform-17-21feb-2025
 git pull
 cd Day1/CustomDockerAnsibleNodeImages/ubuntu-ansible
+cp ~/.ssh/id_ed25519.pub authorized_keys
+docker build -t tektutor/ubuntu-ansible-node:1.0 .
+docker images
+```
+Expected output
+![image](https://github.com/user-attachments/assets/a448fd77-e30a-401a-83e9-c09371291cba)
+![image](https://github.com/user-attachments/assets/9bd6ac2c-1ed2-49ff-bcfd-939cf263f64d)
+
+## Lab - Let's create couple of containers using the custom image we build in the previous lab exercise
+```
+docker run -d --name ubuntu1 --hostname ubuntu1 -p 2001:22 -p 8001:80 tektutor/ubuntu-ansible-node:1.0
+docker run -d --name ubuntu2 --hostname ubuntu2 -p 2002:22 -p 8002:80 tektutor/ubuntu-ansible-node:1.0
+```
+
+Listing the currently running containers
+```
+docker ps
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/b99fff2a-d1f5-4133-8a63-49f8ffc153f7)
+
+## Lab - Test if we are able to SSH into ubuntu1 and ubuntu2 ansible node containers
+
+When if prompts with a question "Are you sure, do you want to connect to the machine (yes/no) ?" you type "yes".  It shouldn't be prompting for password as we configured public/private login authentication.
 
 ```
+ssh -p 2001 root@localhost
+exit
+
+ssh -p 2002 root@localhost
+exit
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/a589cc06-eff5-4919-a697-4045fa5292a2)
+![image](https://github.com/user-attachments/assets/c3dd46d4-4f41-4545-a166-2d255e4b1b6d)
+
+## Lab - Running your first ansible ad-hoc command to ping ubuntu1 and ubuntu2 ansible container nodes
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day1/ansible
+cat inventory
+ansible -i inventory all -m ping
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/cbf9a1c8-420a-40c6-aa03-a9fea8229b04)
