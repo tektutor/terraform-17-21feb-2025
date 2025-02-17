@@ -141,9 +141,15 @@ cd terraform-17-21feb-2025
 Each time I push new instructions and/or code samples, you just need to git pull to get the delta changes, hence clone must be done only the first time.
 
 ## Lab - Building a Custom Docker Image to provision ansible node containers
+Let's generate key pair in the terminal for rps linux user
+```
+ssh-keygen
+```
 
+Expected ouput
+![image](https://github.com/user-attachments/assets/9c1dc2a1-43a2-4c07-a45d-df94e505d899)
 
-
+Let's build a custom build image
 ```
 cd ~/terraform-17-21feb2025
 git pull
