@@ -101,3 +101,8 @@
 - each Play runs zero to many Roles
 
 </pre>
+
+## Info - Ansible Controller Machine ( ACM )
+- the machine where Ansible is installed is called Ansible Controller Machine
+- officially only a Linux machine can be an Ansible Controller Machine
+- Windows machines can't be an Ansible Controller Machine
