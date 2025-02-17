@@ -158,3 +158,7 @@ cp ~/.ssh/id_ed25519.pub authorized_keys
 docker build -t tektutor/ubuntu-ansible-node:1.0 .
 docker images
 ```
+Expected output
+![image](https://github.com/user-attachments/assets/a448fd77-e30a-401a-83e9-c09371291cba)
+![image](https://github.com/user-attachments/assets/9bd6ac2c-1ed2-49ff-bcfd-939cf263f64d)
+
