@@ -7,6 +7,7 @@
   - software installation
   - software uninstallation
   - software update/upgrade
+  - network administration
   - patching OS
   - managing database servers, webservers, app servers
   - services
@@ -22,4 +23,8 @@
 - you could run shell scripts, batches, powershell scripts, etc.,
 - However, ansible can one be installed on Linux machine officially ( but it seems to work in Mac as well )
 - Ansible can't be installed on Windows machins, but ansible can manage Windows machines
+- Examples of Configuration Management Tools
+  - Ansible
+  - Puppet
+  - Chef
 </pre>
