@@ -1,6 +1,6 @@
 # Day 1
 
-## Please share your first day feedback here
+## Please share your first day feedback here ( Do this from RPS cloud machine chrome web browser )
 <pre>
 https://survey.zohopublic.com/zs/dTEBm4  
 </pre>  
