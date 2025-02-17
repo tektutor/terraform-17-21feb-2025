@@ -154,5 +154,7 @@ Let's build a custom build image
 cd ~/terraform-17-21feb-2025
 git pull
 cd Day1/CustomDockerAnsibleNodeImages/ubuntu-ansible
-
+cp ~/.ssh/id_ed25519.pub authorized_keys
+docker build -t tektutor/ubuntu-ansible-node:1.0 .
+docker images
 ```
