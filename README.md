@@ -20,3 +20,12 @@ docker images
 
 Expected output
 ![image](https://github.com/user-attachments/assets/97f4df5a-1ef9-4897-941b-bbb20d6c1fdd)
+
+#### Terraform
+See if you have terraform installed on your lab machine
+```
+terraform version
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/b163d780-1349-4390-91ba-b62a30c75feb)
