@@ -130,6 +130,53 @@ udo add-apt-repository --yes --update ppa:ansible/ansible
 sudo apt install ansible
 ```
 
+## Info - What is Linux Distribution?
+<pre>
+For example
+- Ubuntu - is a Linux distribution
+- Fedora - is another Linux distribution
+- RHEL - is yet another Linux distribution from Red Hat
+- What is common among the above OS?
+  - all are Linux OS
+  - They all have Linux Kernel which is common
+  - Linux Kernel is the core component of any Linux OS
+  - The same set of Linux tools are supported by the above linux OS
+  - Shells,bash shell, sh shell, etc.
+- Different Linux distributions support different Package Managers
+
+</pre>  
+
+## Info - Package manager
+<pre>
+- is an utility that comes out of box with Linux OS
+- depending on which linux family the OS distribution comes under, they may support different package managers
+- Debian linux family ( package manager - apt or apt-get 0
+  - ubuntu
+  - kali
+  - Raspberry Pi
+- RedHat linux family ( package manager - yum or rpm or dnf 0 
+- packager helps us 
+  - install softwares
+  - uninstall softwares
+  - update/upgrade/downgrade softwares
+  - downloads the compatible installer binary from Repository Servers
+</pre>  
+
+## Info - Linux Repository Server
+<pre>
+- Each Linux distribution company maintains a website( repository server )
+- The repository server could be JFrog Artifactory, Sonatype Nexus, similar products
+- Ubuntu 24.04, there can many variants
+  - ARM processor
+  - Apple silicon
+  - Intel 32-bit Processor
+  - AMD x64 bit Processor
+  - 32 bit OS or 64 bit OS
+- Each repository server will provide processor specific pages to download compatible softwares
+- Each repository server will provide separate repository url for different version of ubuntu 18.04, 20,04, 22.04, 24,04
+- separe page/url for 32-bit/64-bit OS 
+</pre>  
+
 ## Info - Key pairs ( public and private key )
 <pre>
 - For any unix/linux/mac user, we can create a key pair(i.e pubilc and private key)
@@ -261,3 +308,19 @@ ansible -i hosts all -m setup
 
 Expected output
 ![image](https://github.com/user-attachments/assets/7d9ccfb9-4831-4ca7-bdd6-37dcd7279e62)
+
+In the hosts file, we [all:vars] captures all the group variables.  For the machines under all group, the variables listed under [all:vars] is applicable.  
+
+In the hosts file, the ansible_port is a host variable, which has unique values for each hosts.
+
+## Lab - Install nginx into ansible nodes, configure custom folder to pick web pages and deploy custom web page
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day1/ansible
+cat playbook.yml
+ansible-playbook -i hosts playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/b24b90f8-348e-44ef-8389-a4b88d2358d5)
