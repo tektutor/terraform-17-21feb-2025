@@ -177,6 +177,9 @@ Expected output
 ![image](https://github.com/user-attachments/assets/b99fff2a-d1f5-4133-8a63-49f8ffc153f7)
 
 ## Lab - Test if we are able to SSH into ubuntu1 and ubuntu2 ansible node containers
+
+When if prompts with a question "Are you sure, do you want to connect to the machine (yes/no) ?" you type "yes".  It shouldn't be prompting for password as we configured public/private login authentication.
+
 ```
 ssh -p 2001 root@localhost
 exit
