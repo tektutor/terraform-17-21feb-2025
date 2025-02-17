@@ -203,3 +203,17 @@ ansible -i inventory all -m ping
 
 Expected output
 ![image](https://github.com/user-attachments/assets/cbf9a1c8-420a-40c6-aa03-a9fea8229b04)
+
+
+## Lab - Collecting facts about ansible nodes using setup module
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day1/ansible
+ansible -i inventory ubuntu1 -m setup
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/742969b2-75d5-4e3c-a9c3-63c51e39ee6d)
+![image](https://github.com/user-attachments/assets/d3285511-525c-4803-ad85-e95a7a725cbb)
+
