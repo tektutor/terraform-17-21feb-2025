@@ -41,3 +41,32 @@
   - Puppet
   - Chef
 </pre>
+
+## Info - Puppet Overview
+<pre>
+- is a configuration management tool
+- is an alternate to Ansible and Chef
+- follows client/server architecture
+- follows pull based architecture
+- the servers that must be managed by Puppet should be installed with Puppet proprietary agent
+</pre>
+
+## Ansible Overview
+<pre>
+- is a configuration management tool developed by Michael Deehan in Python
+- the DSL (Domain Specific Language - the language in which automation script is written) used by Ansible is YAML
+- YAML is a superset of JSON(JavaScript Object Notation)
+- Ansible playbooks can be written by anyone who knows YAML, Python knowledge is not mandatory
+- Ansible is agentless, i.e we don't have to install any Ansible Proprietary tools on the Ansible Node
+- Ansible Nodes are the servers that we would like to perform configuration management 
+- Ansible Nodes cane be Windows Servers, Unix Server, Linux Servers, Mac machine
+- Ansible come in 3 flavours
+  - Ansible Core 
+    - opensource, supports only command-line
+  - Ansible AWX
+    - opensource, supports Web console GUI
+    - developed on top of Ansible Core
+  - Red Hat Enterprise product 
+    - Ansible Tower or Ansible Automation Platform ( Licensed product from Red Hat )
+    - developed on to of opensource AWX
+</pre>
