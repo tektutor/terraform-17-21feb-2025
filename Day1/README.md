@@ -73,7 +73,6 @@
     - supports webconsole (GUI)
 </pre>
 
-
 ## Info - Ansible Modules
 - Ansible modules comes out of the box when we install Ansible in our laptop/desktop
 - Ansible modules for Unix/Linux/Mac they are written as Python scripts
@@ -83,3 +82,22 @@
   - to install/uninstall softwares in Debain( Ubuntu like Linux distributions ) we have apt ansible module
   - to install/uninstall softwares in Red Hat Linux distributions, we could use yum ansible module
   - to manage services, we could use service ansible module
+
+## Info - Ansible ad-hoc command
+<pre>
+- ansible ad-hoc command is just invoking a single ansible module without writing a playbook
+- usually helps us understand what features a individual modules has, it is way we can experiment a module before using them in playbooks
+- each command just invokes one Ansible module
+</pre>
+
+## Info - Ansible Playbook
+<pre>
+- is a YAML file, hence can be written using any plain text editor of your choice
+- it follows a specific structure or format
+- each Playbook has one or more Play
+- each Play targets one to many hosts(ansible nodes to perform the automation)
+- each Play runs zero to many Tasks
+- each Task runs exactly one Ansible module
+- each Play runs zero to many Roles
+
+</pre>
