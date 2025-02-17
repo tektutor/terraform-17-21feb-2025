@@ -362,3 +362,15 @@ curl http://localhost:8002
 Expected output
 ![image](https://github.com/user-attachments/assets/8b2dfdeb-b997-402d-b0a9-00f01837c374)
 ![image](https://github.com/user-attachments/assets/71446504-0a0f-4c3e-8751-ea09d59513dd)
+
+## Lab - Using ftp, let's copy the default nginx config file to our local machine(Ansible Controller Machine)
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day1/ansible/install-nginx
+sftp root@172.17.0.2:/etc/nginx/sites-available/default .
+ls -l
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/5d255aef-ccde-43f0-b548-516a35662694)
