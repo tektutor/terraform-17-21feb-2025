@@ -233,6 +233,6 @@ cd Day1/ansible
 ansible-playbook -i inventory ping-playbook.yml
 ```
 
-Expected outpu
+Expected output
 ![image](https://github.com/user-attachments/assets/44bf3893-9e20-4888-973e-616609ff06c5)
 
