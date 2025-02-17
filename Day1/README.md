@@ -122,14 +122,31 @@
 - if the Ansible node happens to be a Unix/Linux/Mac/Switches/routers, then it have SSH connection details, login credentials, etc.,
 </pre>
 
-## Lab - Cloning TekTutor training repository ( from linux terminal )
+## Info - Key pairs ( public and private key )
+<pre>
+- For any unix/linux/mac user, we can create a key pair(i.e pubilc and private key)
+- The private key must be retained on the same machine where it was generated
+- The private should never be shared with anyone
+- The key pairs are always unique in nature
+- The public key will only match with a particular private key
+- The public key will be shared to trused unix/linux/mac machines to which one wish to perform ssh login
+</pre>
+
+## Lab - Cloning TekTutor training repository ( from linux terminal - one time activity )
 ```
 cd ~
 git clone https://github.com/tektutor/terraform-17-21feb-2025.git
 cd terraform-17-21feb-2025
 ```
+Each time I push new instructions and/or code samples, you just need to git pull to get the delta changes, hence clone must be done only the first time.
 
 ## Lab - Building a Custom Docker Image to provision ansible node containers
+
+
+
 ```
+cd ~/terraform-17-21feb2025
+git pull
+cd Day1/CustomDockerAnsibleNodeImages/ubuntu-ansible
 
 ```
