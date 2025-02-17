@@ -324,3 +324,7 @@ ansible-playbook -i hosts playbook.yml
 
 Expected output
 ![image](https://github.com/user-attachments/assets/b24b90f8-348e-44ef-8389-a4b88d2358d5)
+![image](https://github.com/user-attachments/assets/3318ca68-8851-48fb-997a-1175bdfd4425)
+![image](https://github.com/user-attachments/assets/a6f2f0c8-f430-4140-84a8-97a4bedf66ac)
+![image](https://github.com/user-attachments/assets/744e008c-7adc-4b68-8e97-61cdc0e778b7)
+![image](https://github.com/user-attachments/assets/db990468-0df5-43ed-8e9c-35935c71c1cd)
