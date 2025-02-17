@@ -191,3 +191,15 @@ exit
 Expected output
 ![image](https://github.com/user-attachments/assets/a589cc06-eff5-4919-a697-4045fa5292a2)
 ![image](https://github.com/user-attachments/assets/c3dd46d4-4f41-4545-a166-2d255e4b1b6d)
+
+## Lab - Running your first ansible ad-hoc command to ping ubuntu1 and ubuntu2 ansible container nodes
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day1/ansible
+cat inventory
+ansible -i inventory all -m ping
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/cbf9a1c8-420a-40c6-aa03-a9fea8229b04)
