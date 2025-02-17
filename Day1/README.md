@@ -328,3 +328,63 @@ Expected output
 ![image](https://github.com/user-attachments/assets/a6f2f0c8-f430-4140-84a8-97a4bedf66ac)
 ![image](https://github.com/user-attachments/assets/744e008c-7adc-4b68-8e97-61cdc0e778b7)
 ![image](https://github.com/user-attachments/assets/db990468-0df5-43ed-8e9c-35935c71c1cd)
+
+
+Finding the IP Address of ubuntu1 and ubuntu2 ansible node containers
+```
+docker inspect -f {{.NetworkSettings.IPAddress}} ubuntu1
+docker inspect -f {{.NetworkSettings.IPAddress}} ubuntu2
+```
+
+Pinging the ansible nodes
+```
+ping 172.17.0.2
+ping 172.17.0.3
+```
+
+Checking the nginx service status using ansible ad-hoc command
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day1/ansible/install-nginx
+ansible -i hosts ubuntu1 -m shell -a "service nginx status"
+```
+
+Accessing the web page from ubuntu1 and ubuntu2
+```
+curl http://172.17.0.2:80
+curl http://localhost:8001
+
+curl http://172.17.0.3:80
+curl http://localhost:8002
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/8b2dfdeb-b997-402d-b0a9-00f01837c374)
+![image](https://github.com/user-attachments/assets/71446504-0a0f-4c3e-8751-ea09d59513dd)
+
+## Lab - Using ftp, let's copy the default nginx config file to our local machine(Ansible Controller Machine)
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day1/ansible/install-nginx
+sftp root@172.17.0.2:/etc/nginx/sites-available/default .
+ls -l
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/5d255aef-ccde-43f0-b548-516a35662694)
+
+
+## Lab - Run the refactored install nginx playbook
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day1/ansible/install-nginx
+cat playbook.yml
+ansible-playbook -i hosts playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/fcf12ba5-4b4b-4669-8404-36b234b877b0)
+![image](https://github.com/user-attachments/assets/294afc44-b227-4c7e-9d74-e8240278a514)
