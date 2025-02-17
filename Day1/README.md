@@ -314,6 +314,8 @@ In the hosts file, we [all:vars] captures all the group variables.  For the mach
 In the hosts file, the ansible_port is a host variable, which has unique values for each hosts.
 
 ## Lab - Install nginx into ansible nodes, configure custom folder to pick web pages and deploy custom web page
+
+Running ansible playbook
 ```
 cd ~/terraform-17-21feb-2025
 git pull
