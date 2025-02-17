@@ -16,4 +16,7 @@
   - name: Restart nginx service to apply the config changes
     service: name=nginx state=restarted
 
+  - name: Deploy custom html web page
+    copy: src=index.html dest=/var/html/index.html
+
 
