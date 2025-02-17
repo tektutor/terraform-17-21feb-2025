@@ -4,3 +4,6 @@
   - name: Install nginx web server into Ubuntu ansible nodes
     apt: name=nginx state=latest update_cache=yes
 
+  - name: Start nginx server
+    service: name=nginx state=restarted enabled=true
+
