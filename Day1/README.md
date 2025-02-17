@@ -265,3 +265,15 @@ Expected output
 In the hosts file, we [all:vars] captures all the group variables.  For the machines under all group, the variables listed under [all:vars] is applicable.  
 
 In the hosts file, the ansible_port is a host variable, which has unique values for each hosts.
+
+## Lab - Install nginx into ansible nodes, configure custom folder to pick web pages and deploy custom web page
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day1/ansible
+cat playbook.yml
+ansible-playbook -i hosts playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/b24b90f8-348e-44ef-8389-a4b88d2358d5)
