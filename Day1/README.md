@@ -389,9 +389,15 @@ ls -l
 cat index.html
 ansible-playbook -i hosts playbook.yml
 
+curl http://172.17.0.2
+curl http://localhost:8001
+
+curl http://172.17.0.3
+curl http://localhost:8002
 ```
 
 Expected output
 ![image](https://github.com/user-attachments/assets/fcf12ba5-4b4b-4669-8404-36b234b877b0)
 ![image](https://github.com/user-attachments/assets/294afc44-b227-4c7e-9d74-e8240278a514)
 ![image](https://github.com/user-attachments/assets/d3deeaca-72e4-4b5b-9e10-5ec30148a049)
+![image](https://github.com/user-attachments/assets/6a82fed8-0355-4537-9a12-20fd98a03c0f)
