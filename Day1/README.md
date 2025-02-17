@@ -236,3 +236,14 @@ ansible-playbook -i inventory ping-playbook.yml
 Expected output
 ![image](https://github.com/user-attachments/assets/44bf3893-9e20-4888-973e-616609ff06c5)
 
+## Lab - Getting help about specific ansible modules
+```
+ansible-doc -l | grep wc
+ansible-doc -l | grep oracle
+ansible-doc -l | grep mysql
+ansible-doc -l | grep mssql
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/f34b01c7-398b-4a00-860f-670295323a42)
+
