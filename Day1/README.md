@@ -261,3 +261,7 @@ ansible -i hosts all -m setup
 
 Expected output
 ![image](https://github.com/user-attachments/assets/7d9ccfb9-4831-4ca7-bdd6-37dcd7279e62)
+
+In the hosts file, we [all:vars] captures all the group variables.  For the machines under all group, the variables listed under [all:vars] is applicable.  
+
+In the hosts file, the ansible_port is a host variable, which has unique values for each hosts.
