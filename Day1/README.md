@@ -151,7 +151,7 @@ Expected ouput
 
 Let's build a custom build image
 ```
-cd ~/terraform-17-21feb2025
+cd ~/terraform-17-21feb-2025
 git pull
 cd Day1/CustomDockerAnsibleNodeImages/ubuntu-ansible
 
