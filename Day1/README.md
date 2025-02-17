@@ -1,4 +1,17 @@
 # Day 1
+## Provisioner Overview
+<pre>
+- is a Infrastructure as a code tool (Iaac)
+- helps create a 
+  - new machine with some OS installed in it
+  - the machine can be created in on-prem, public/hybrid cloud
+  - the machine can be provisioned in VMWare vsphere or similar hypervisors
+- Examples
+  - Docker
+  - Vagrant
+  - AWS Cloudformation
+  - Terraform
+</pre>  
 
 ## Configuration Management Overview
 <pre>
