@@ -63,6 +63,7 @@
 - Ansible come in 3 flavours
   - Ansible Core 
     - opensource, supports only command-line
+    - doesn't support GUI
   - Ansible AWX
     - opensource, supports Web console GUI
     - developed on top of Ansible Core
@@ -70,3 +71,14 @@
     - Ansible Tower or Ansible Automation Platform ( Licensed product from Red Hat )
     - developed on to of opensource AWX
 </pre>
+
+
+## Info - Ansible Modules
+- Ansible modules comes out of the box when we install Ansible in our laptop/desktop
+- Ansible modules for Unix/Linux/Mac they are written as Python scripts
+- Ansible modules for Windows are written as Powershell scripts
+- Each ansible modules does one job
+  - Copy module helps copying a file from local machine to remote ansible node or vice versa
+  - to install/uninstall softwares in Debain( Ubuntu like Linux distributions ) we have apt ansible module
+  - to install/uninstall softwares in Red Hat Linux distributions, we could use yum ansible module
+  - to manage services, we could use service ansible module
