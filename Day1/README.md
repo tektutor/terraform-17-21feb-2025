@@ -317,7 +317,7 @@ In the hosts file, the ansible_port is a host variable, which has unique values 
 ```
 cd ~/terraform-17-21feb-2025
 git pull
-cd Day1/ansible
+cd Day1/ansible/install-nginx
 cat playbook.yml
 ansible-playbook -i hosts playbook.yml
 ```
