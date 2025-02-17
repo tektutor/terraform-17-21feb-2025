@@ -162,3 +162,16 @@ Expected output
 ![image](https://github.com/user-attachments/assets/a448fd77-e30a-401a-83e9-c09371291cba)
 ![image](https://github.com/user-attachments/assets/9bd6ac2c-1ed2-49ff-bcfd-939cf263f64d)
 
+## Lab - Let's create couple of containers using the custom image we build in the previous lab exercise
+```
+docker run -d --name ubuntu1 --hostname ubuntu1 -p 2001:22 -p 8001:80 tektutor/ubuntu-ansible-node:1.0
+docker run -d --name ubuntu2 --hostname ubuntu2 -p 2002:22 -p 8002:80 tektutor/ubuntu-ansible-node:1.0
+```
+
+Listing the currently running containers
+```
+docker ps
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/b99fff2a-d1f5-4133-8a63-49f8ffc153f7)
