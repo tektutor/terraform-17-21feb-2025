@@ -70,6 +70,7 @@
   - Red Hat Enterprise product 
     - Ansible Tower or Ansible Automation Platform ( Licensed product from Red Hat )
     - developed on to of opensource AWX
+    - supports webconsole (GUI)
 </pre>
 
 
