@@ -225,3 +225,39 @@ Expected output
 ![image](https://github.com/user-attachments/assets/742969b2-75d5-4e3c-a9c3-63c51e39ee6d)
 ![image](https://github.com/user-attachments/assets/d3285511-525c-4803-ad85-e95a7a725cbb)
 
+## Lab - Running your first ansible ping playbook
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day1/ansible
+ansible-playbook -i inventory ping-playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/44bf3893-9e20-4888-973e-616609ff06c5)
+
+## Lab - Getting help about specific ansible modules
+```
+ansible-doc -l | grep wc
+ansible-doc -l | grep oracle
+ansible-doc -l | grep mysql
+ansible-doc -l | grep mssql
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/f34b01c7-398b-4a00-860f-670295323a42)
+
+## Lab - Multiple inventory
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day1/ansible
+ls
+cat inventory
+cat hosts
+ansible -i inventory all -m ping
+ansible -i hosts all -m setup
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/7d9ccfb9-4831-4ca7-bdd6-37dcd7279e62)
