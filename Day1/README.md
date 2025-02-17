@@ -121,3 +121,15 @@
 - if the Ansible node happens to be a Window machine, then it will have WinRM connection details, login credentials, etc
 - if the Ansible node happens to be a Unix/Linux/Mac/Switches/routers, then it have SSH connection details, login credentials, etc.,
 </pre>
+
+## Lab - Cloning TekTutor training repository ( from linux terminal )
+```
+cd ~
+git clone https://github.com/tektutor/terraform-17-21feb-2025.git
+cd terraform-17-21feb-2025
+```
+
+## Lab - Building a Custom Docker Image to provision ansible node containers
+```
+
+```
