@@ -374,3 +374,17 @@ ls -l
 
 Expected output
 ![image](https://github.com/user-attachments/assets/5d255aef-ccde-43f0-b548-516a35662694)
+
+
+## Lab - Run the refactored install nginx playbook
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day1/ansible/install-nginx
+cat playbook.yml
+ansible-playbook -i hosts playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/fcf12ba5-4b4b-4669-8404-36b234b877b0)
+![image](https://github.com/user-attachments/assets/294afc44-b227-4c7e-9d74-e8240278a514)
