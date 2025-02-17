@@ -175,3 +175,16 @@ docker ps
 
 Expected output
 ![image](https://github.com/user-attachments/assets/b99fff2a-d1f5-4133-8a63-49f8ffc153f7)
+
+## Lab - Test if we are able to SSH into ubuntu1 and ubuntu2 ansible node containers
+```
+ssh -p 2001 root@localhost
+exit
+
+ssh -p 2002 root@localhost
+exit
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/a589cc06-eff5-4919-a697-4045fa5292a2)
+![image](https://github.com/user-attachments/assets/c3dd46d4-4f41-4545-a166-2d255e4b1b6d)
