@@ -230,7 +230,7 @@ Expected output
 cd ~/terraform-17-21feb-2025
 git pull
 cd Day1/ansible
-ansible-playbook -i inventory install-playbook.yml
+ansible-playbook -i inventory ping-playbook.yml
 ```
 
 Expected outpu
