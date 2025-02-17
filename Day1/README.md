@@ -122,6 +122,14 @@
 - if the Ansible node happens to be a Unix/Linux/Mac/Switches/routers, then it have SSH connection details, login credentials, etc.,
 </pre>
 
+## Info - Installing ansible core in Ubuntu
+```
+sudo apt update
+sudo apt install software-properties-common
+udo add-apt-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible
+```
+
 ## Info - Key pairs ( public and private key )
 <pre>
 - For any unix/linux/mac user, we can create a key pair(i.e pubilc and private key)
