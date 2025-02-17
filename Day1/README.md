@@ -19,6 +19,7 @@
   - it can Raspberry Pi, it can be machine in onprem environment, it can be machine in public cloud
   - it can be a docker container
   - it can be a podman container
+- you could run shell scripts, batches, powershell scripts, etc.,
 - However, ansible can one be installed on Linux machine officially ( but it seems to work in Mac as well )
 - Ansible can't be installed on Windows machins, but ansible can manage Windows machines
 </pre>
