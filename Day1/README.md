@@ -264,7 +264,7 @@ Expected output
 ```
 cd ~/terraform-17-21feb-2025
 git pull
-cd Day1/ansible
+cd Day1/ansible/playbooks
 ansible -i inventory ubuntu1 -m setup
 ```
 
