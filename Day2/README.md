@@ -20,7 +20,7 @@ Expected output
 ## Lab - Let's create couple of rocky ansible node containers using our custom rocky linux docker image
 ```
 docker run -d --name rocky1 --hostname rocky1 -p 2003:22 -p 8003:80 tektutor/rocky-ansible-node:1.0
-docker run -d --name rocky1 --hostname rocky1 -p 2003:22 -p 8003:80 tektutor/rocky-ansible-node:1.0
+docker run -d --name rocky2 --hostname rocky2 -p 2003:22 -p 8003:80 tektutor/rocky-ansible-node:1.0
 ```
 
 Expected output
