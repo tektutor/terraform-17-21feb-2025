@@ -31,3 +31,15 @@ docker run -d --name rocky2 --hostname rocky2 -p 2004:22 -p 8004:80 tektutor/roc
 
 Expected output
 ![image](https://github.com/user-attachments/assets/23245ea3-83e8-4200-bc6f-6278bd9ffd56)
+
+## Lab - Let's try to do SSH into the rocky ansible node containers
+```
+ssh -p 2003 root@localhost
+exit
+
+ssh -p 2004 root@localhost
+exit
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/c0f919dc-f5d5-4fc2-95fe-68546790af42)
