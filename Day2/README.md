@@ -311,3 +311,22 @@ Click "Save"
 ![image](https://github.com/user-attachments/assets/0bfc5abb-83f7-46d8-ae0e-8c84510dd6ff)
 
 ![image](https://github.com/user-attachments/assets/185eadf9-90f3-45e7-86e2-f58406a8cb40)
+
+## Lab - Create a Job Template to invoke Ansible Playbook from Ansible Tower
+Open your Ansible Tower Dashboard
+![image](https://github.com/user-attachments/assets/d8b7b733-149f-4bcd-a8c3-daad24ecc48c)
+
+Navigate to Resources --> Templates
+![image](https://github.com/user-attachments/assets/2ad8e99a-7228-450d-ae26-1f780e152c1a)
+Click "Add"
+![image](https://github.com/user-attachments/assets/1894b68f-930e-4fc4-9acf-a2a055a7221a)
+Select "Add Job Template"
+![image](https://github.com/user-attachments/assets/a3c22fec-5fce-4359-aac4-2e80e2282cbd)
+![image](https://github.com/user-attachments/assets/3574dc41-bd76-4ce0-9b69-9b124c07ece2)
+![image](https://github.com/user-attachments/assets/0f451e49-9d78-4040-b393-e512cb203d0d)
+![image](https://github.com/user-attachments/assets/03b5fc67-d46a-45cf-8a52-f608cde3e250)
+![image](https://github.com/user-attachments/assets/a731c9ab-da0e-432c-85fa-1c4cd969bdb8)
+![image](https://github.com/user-attachments/assets/de680afc-cc1d-4175-a81a-179936d1d3a6)
+![image](https://github.com/user-attachments/assets/0efcfcf6-020c-4313-8c6f-c5ac80462092)
+Click "Save"
+![image](https://github.com/user-attachments/assets/55a599e2-09d7-4ff7-a17a-7bd7976c99d2)
