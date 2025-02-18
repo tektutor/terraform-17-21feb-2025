@@ -85,7 +85,7 @@ Expected output
 ```
 cd ~/terraform-17-21feb-2025
 git pull
-cd Day2/ansible
+cd Day2/ansible/install-nginx
 cat playbook.yml
 ansible-playbook -i hosts playbook.yml
 curl http://localhost:8001
@@ -102,3 +102,5 @@ Expected output
 ![image](https://github.com/user-attachments/assets/803bc3e7-01cc-41a8-b269-bc6cfcc36726)
 ![image](https://github.com/user-attachments/assets/fe071165-14cb-4cf5-b3bc-acbd597d29dd)
 ![image](https://github.com/user-attachments/assets/eee97125-d443-4863-baa5-4ab2c2a00963)
+![image](https://github.com/user-attachments/assets/83a27421-db1e-4e4a-a395-3d28c8472e97)
+![image](https://github.com/user-attachments/assets/ec019f41-f83d-45ce-aad8-212dbd9b395d)
