@@ -1,0 +1,7 @@
+- name: This playbook demonstrates using data stored in an ansible vault protected file
+  hosts: localhost
+  vars_files:
+  - mysql-credentials.yml
+  tasks:
+  - debug: msg="Username = {{username}}; Password = {{password}}"
+
