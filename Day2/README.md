@@ -169,5 +169,14 @@ Expected output
 ![image](https://github.com/user-attachments/assets/5b63fc8c-8cb3-4997-ab9f-a830da8d8486)
 
 ## Lab - Using vault-protected data in playbook
+
+When ansible prompts for password type 'root' without quotes
 ```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day2/ansible/vault
+ansible-playbook playbook.yml
 ```
+
+Expected output
+![image](https://github.com/user-attachments/assets/2aeec98d-7ea8-460a-91fa-fc9c5e9fd175)
