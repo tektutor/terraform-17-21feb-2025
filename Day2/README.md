@@ -385,3 +385,42 @@ go run ./hello.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/a35a084c-d005-49a2-992a-7a18191383c4)
+
+## Lab - Variables in golang
+
+Create a file named variables.go with the below content
+```
+package main
+
+import "fmt"
+
+func main() {
+	var inventor1 = "Ken Thompson" //Declares a string implicitly
+
+	inventor2 := "Rob Pike"	       //Short form of declaring a variable and initializing it with some value
+	var inventor3 string	       //Declares string variable
+	inventor3 = "Robert Griesemer" //initialize the string variable with a value
+
+	fmt.Println ("Golang inventors")
+	fmt.Println ( inventor1 )
+	fmt.Println ( inventor2 )
+	fmt.Println ( inventor3 )
+}
+```
+
+Run the application
+```
+go run ./variables.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/9c46a535-5104-4b41-927c-1b24a764f990)
+![image](https://github.com/user-attachments/assets/ec5f6111-2400-4844-b736-8080f080b520)
+![image](https://github.com/user-attachments/assets/64b402f2-dd7d-4113-a8c0-e10cd939b3bd)
+![image](https://github.com/user-attachments/assets/4ce27e6c-b1c4-41b4-9aee-16918d4bdd62)
+![image](https://github.com/user-attachments/assets/8be5d12f-0b5c-4406-b25f-03e46cfc5bd8)
+
+## Lab - Installing visual studio code editor in Ubuntu
+```
+sudo snap install code --classic
+```
