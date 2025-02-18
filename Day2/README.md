@@ -104,3 +104,30 @@ Expected output
 ![image](https://github.com/user-attachments/assets/eee97125-d443-4863-baa5-4ab2c2a00963)
 ![image](https://github.com/user-attachments/assets/83a27421-db1e-4e4a-a395-3d28c8472e97)
 ![image](https://github.com/user-attachments/assets/ec019f41-f83d-45ce-aad8-212dbd9b395d)
+
+## Info - Ansible Role
+<pre>
+- helps us reuse code between many playbooks
+- roles follows certain best practices and directory structures
+- role can't be executed directory
+- roles are like Dynamic Link Library(dll), which has some reusable code. Just like dll are loaded into application code, where they are invoke. Roles can invoked thru ansible playbook
+- each roles normally focusses on configuration management activities required for a single software
+- For example
+  - we could an ansible role to install Mysql db server in Ubuntu, Rocky, RHEL, Windows ansible nodes, etc
+  - we could an ansible role to install weblogic app server in Ubuntu, Rocky, RHEL and Windows ansible nodes
+- there is a tool called ansible-galaxy which can used to download/install opensource roles from galaxy web portal, or we could the tool to develop our own custom ansible role
+</pre>
+
+## Lab - Creating a role to install nginx in Ubuntu and Rocky Linux ansible nodes
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day2/ansible
+ansible-galaxy init nginx
+tree nginx
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/be7aa7ca-b495-4de6-8614-e49b25b4a1a0)
+![image](https://github.com/user-attachments/assets/18a2e8c1-d53b-4299-a96a-0d95ed90affc)
+
