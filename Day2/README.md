@@ -145,3 +145,29 @@ Expected output
 ![image](https://github.com/user-attachments/assets/04dc195a-f796-4751-aa79-9e3d46012560)
 ![image](https://github.com/user-attachments/assets/6dc063a1-46ac-4aad-b154-934ef2c8bcfd)
 ![image](https://github.com/user-attachments/assets/783a1ede-f562-4456-b692-f5e498e5e817)
+
+## Info - Ansible vault
+<pre>
+- ansible-vault can help in encrypting/decrypting sensitive information like password credentials, etc
+- the vault protected information can be retrieved safely and used within playbook
+- using ansible vault one can
+  - create a vault file storing sensitive data
+  - view the password protected sensitive data providing the password
+  - edit the vault protected file
+  - encrypt any text file
+  - decrypt already ansible vault encrypted file
+  - change the password of ansible vault file
+</pre>
+
+## Lab - Ansible vault
+```
+ansible-vault create mysql-credentials.yml
+ansible-vault view mysql-credentials.yml
+ansible-vault edit mysql-credentials.yml
+```
+Expected output
+![image](https://github.com/user-attachments/assets/5b63fc8c-8cb3-4997-ab9f-a830da8d8486)
+
+## Lab - Using vault-protected data in playbook
+```
+```
