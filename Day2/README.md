@@ -212,3 +212,18 @@ password -
 Expected output
 ![image](https://github.com/user-attachments/assets/2047fc10-8373-4168-a630-f6d9631f9e41)
 ![image](https://github.com/user-attachments/assets/bd2aeeb4-73d3-422c-89a5-5515329fb12b)
+
+## Lab - Creating a project in Ansible Tower
+Open your Ansible Tower Dashboard
+![image](https://github.com/user-attachments/assets/d8b7b733-149f-4bcd-a8c3-daad24ecc48c)
+
+Navigate to Resources --> Projects
+![image](https://github.com/user-attachments/assets/df7ae704-407b-4a1b-b52f-d9ae44fbb862)
+Click "Add"
+![image](https://github.com/user-attachments/assets/d129342b-94b0-4bc7-aafc-d6a9f33b52ed)
+![image](https://github.com/user-attachments/assets/3f3c8ee1-6fba-4e3c-9529-7fd933289ccb)
+![image](https://github.com/user-attachments/assets/e69530da-5f18-418a-921c-ec5b0cd426e5)
+![image](https://github.com/user-attachments/assets/404714b8-602e-4163-ba97-a3160c082f9c)
+![image](https://github.com/user-attachments/assets/6e198a0a-1208-4bd7-99ac-0f9795904635)
+Click "Save"
+![image](https://github.com/user-attachments/assets/bca2d424-a33a-4de5-b193-39f9819b3015)
