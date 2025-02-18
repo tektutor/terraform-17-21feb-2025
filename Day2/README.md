@@ -18,6 +18,12 @@ Expected output
 ![image](https://github.com/user-attachments/assets/6390a786-021c-44b7-9674-8968ca6b66d3)
 
 ## Lab - Let's create couple of rocky ansible node containers using our custom rocky linux docker image
+In case rocky containers are already there, you may delete as shown below
+```
+docker rm -f rocky1 rocky2
+```
+
+Now you should be able to recreate rocky1 and rocky2
 ```
 docker run -d --name rocky1 --hostname rocky1 -p 2003:22 -p 8003:80 tektutor/rocky-ansible-node:1.0
 docker run -d --name rocky2 --hostname rocky2 -p 2004:22 -p 8004:80 tektutor/rocky-ansible-node:1.0
