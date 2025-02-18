@@ -1,4 +1,4 @@
-# Day 2
+![image](https://github.com/user-attachments/assets/06a409a3-d122-4e53-8575-7c412d65f443)# Day 2
 
 ## Lab - Building a custom rocky linux ansible node container
 ```
@@ -261,3 +261,24 @@ Select "Add inventory"
 ![image](https://github.com/user-attachments/assets/8270acb9-70cf-4d73-8840-ec4d980e42a4)
 Click "Save"
 ![image](https://github.com/user-attachments/assets/09d377c9-76c9-483a-9a91-bee1bc6a0da9)
+
+In order add "Hosts" into the Inventory, click on "Hosts" Tab
+![image](https://github.com/user-attachments/assets/2aaf4bdc-3cf7-4ff3-a7b8-321fa45fea78)
+![image](https://github.com/user-attachments/assets/12b80d14-04d1-4330-867c-1eeb3452ecfa)
+Click "Add"
+![image](https://github.com/user-attachments/assets/8cbc6360-5533-4c4e-a865-7bb9a97ffb99)
+Find the IP address of your lab machine
+```
+sudo apt install -y net-tools
+ifconfig ens160
+```
+![image](https://github.com/user-attachments/assets/f65585e9-523d-4221-9a18-9efe1da8da77)
+![image](https://github.com/user-attachments/assets/a2c981cf-2b35-4a8b-9dee-64dde29c6dc7)
+```
+ansible_port: 2001
+ansible_user: root
+ansible_host: 192.168.2.176
+```
+![image](https://github.com/user-attachments/assets/f6ddfcfd-0b0b-4d5c-906e-2905bb05d0c6)
+Click "Save"
+![image](https://github.com/user-attachments/assets/2b611532-d4a3-4a31-82f6-f8ea649e1280)
