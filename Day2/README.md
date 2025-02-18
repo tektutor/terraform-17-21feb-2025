@@ -193,3 +193,4 @@ minikube service awx-demo-service --url -n ansible-awx
 ```
 
 Expected output
+![image](https://github.com/user-attachments/assets/38345bed-47d7-4570-8f7a-bd426efefd30)
