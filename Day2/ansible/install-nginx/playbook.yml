@@ -52,4 +52,20 @@
   - name: Deploy custom html web page
     copy: src=index.html dest=/var/html/index.html
 
+- name: Let's verify if we are able to access the web pages on ubuntu and rocky ansible nodes containers
+  hosts: localhost
+  vars:
+    urls:
+      - http://localhost:8001
+      - http://localhost:8002
+      - http://localhost:8003
+      - http://localhost:8004
+  tasks:
+  - name: Access web page on ansible node
+    shell: "curl {{item}}"
+    with_list: "{{urls}}"
+    register: response
+
+  - debug: var=response
+
 
