@@ -332,4 +332,24 @@ Click "Save"
 ![image](https://github.com/user-attachments/assets/55a599e2-09d7-4ff7-a17a-7bd7976c99d2)
 ![image](https://github.com/user-attachments/assets/5908d44b-be86-42f0-be27-356802cd3fd9)
 ![image](https://github.com/user-attachments/assets/b3ba31b4-b7de-4901-9e49-815a77efd4d1)
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/594bac11-901a-49e0-8746-f34f9b5c2cd3)
+
+## Lab - Installing tower cli
+```
+sudo apt install -y python3-pip
+pip install ansible-tower-cli --break-system-packages
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/a5800d97-d9f0-4229-8476-cc4d15eed5ed)
+![image](https://github.com/user-attachments/assets/95b1f71d-0dbe-42fb-a6a8-cae788fbafb9)
+
+## Lab - Using tower-cli
+```
+tower-cli config host https://192.168.49.2/31225
+tower-cli config username admin
+tower-cli config password your-admin-password
+tower-cli config verify_ssl false
+tower-cli project list
+
+```
