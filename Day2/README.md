@@ -1,4 +1,4 @@
-# Day 2
+![image](https://github.com/user-attachments/assets/06a409a3-d122-4e53-8575-7c412d65f443)# Day 2
 
 ## Lab - Building a custom rocky linux ansible node container
 ```
@@ -169,5 +169,219 @@ Expected output
 ![image](https://github.com/user-attachments/assets/5b63fc8c-8cb3-4997-ab9f-a830da8d8486)
 
 ## Lab - Using vault-protected data in playbook
+
+When ansible prompts for password type 'root' without quotes
 ```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day2/ansible/vault
+cat mysql-credentials.yml
+ansible-playbook playbook.yml
 ```
+
+Expected output
+![image](https://github.com/user-attachments/assets/2aeec98d-7ea8-460a-91fa-fc9c5e9fd175)
+![image](https://github.com/user-attachments/assets/6f538e8a-8fcf-447b-a757-cfc54b7529c1)
+
+## Lab - Starting Ansible Tower (aka Ansible Automation Platform)
+```
+minikube status
+minikube start
+kubectl get pods -n ansible-awx
+kubectl get svc -n ansible-awx
+minikube service awx-demo-service --url -n ansible-awx
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/38345bed-47d7-4570-8f7a-bd426efefd30)
+![image](https://github.com/user-attachments/assets/18d8356c-0499-44c2-b2c2-59e35aee1b8c)
+
+
+Ansible Tower Login Credentials
+Retrieving Ansible Tower password
+```
+kubectl get secret -n ansible-awx | grep -i password
+kubectl get secret awx-demo-admin-password -o jsonpath="{.data.password}" -n ansible-awx | base64 --decode; echo
+```
+
+<pre>
+username - admin
+password - 
+</pre>
+
+Expected output
+![image](https://github.com/user-attachments/assets/2047fc10-8373-4168-a630-f6d9631f9e41)
+![image](https://github.com/user-attachments/assets/bd2aeeb4-73d3-422c-89a5-5515329fb12b)
+
+## Lab - Creating a project in Ansible Tower
+Open your Ansible Tower Dashboard
+![image](https://github.com/user-attachments/assets/d8b7b733-149f-4bcd-a8c3-daad24ecc48c)
+
+Navigate to Resources --> Projects
+![image](https://github.com/user-attachments/assets/df7ae704-407b-4a1b-b52f-d9ae44fbb862)
+Click "Add"
+![image](https://github.com/user-attachments/assets/d129342b-94b0-4bc7-aafc-d6a9f33b52ed)
+![image](https://github.com/user-attachments/assets/3f3c8ee1-6fba-4e3c-9529-7fd933289ccb)
+![image](https://github.com/user-attachments/assets/e69530da-5f18-418a-921c-ec5b0cd426e5)
+![image](https://github.com/user-attachments/assets/404714b8-602e-4163-ba97-a3160c082f9c)
+![image](https://github.com/user-attachments/assets/6e198a0a-1208-4bd7-99ac-0f9795904635)
+Click "Save"
+![image](https://github.com/user-attachments/assets/bca2d424-a33a-4de5-b193-39f9819b3015)
+![image](https://github.com/user-attachments/assets/f21840f7-9d84-499f-9977-2f841111533f)
+![image](https://github.com/user-attachments/assets/c9a2f9ef-87ee-44c3-b050-6c6933652316)
+
+## Lab - Create a credential to store Private Key within Ansible Tower
+Open your Ansible Tower Dashboard
+![image](https://github.com/user-attachments/assets/d8b7b733-149f-4bcd-a8c3-daad24ecc48c)
+
+Navigate to Resources --> Credentials
+![image](https://github.com/user-attachments/assets/f538e21b-6e0c-4208-a684-049e72b1f9ad)
+Click "Add"
+![image](https://github.com/user-attachments/assets/0360f6d3-5e47-4452-b715-6f210cf51f67)
+![image](https://github.com/user-attachments/assets/2d8ca5ce-bdd3-4bda-b970-24569d71781e)
+```
+cat ~/.ssh/id_ed25519
+```
+![image](https://github.com/user-attachments/assets/94af92dd-675c-4266-80d7-ec25ed546d83)
+![image](https://github.com/user-attachments/assets/ecd566b0-dd7a-4403-a6db-7cb8189fb142)
+![image](https://github.com/user-attachments/assets/96a1959e-69e4-4f4a-a273-9a1fae432312)
+Click "Save"
+![image](https://github.com/user-attachments/assets/b3565331-9430-4494-8e44-146f4a7d126e)
+
+## Lab - Let's create an Inventory in Ansible Tower
+Open your Ansible Tower Dashboard
+![image](https://github.com/user-attachments/assets/d8b7b733-149f-4bcd-a8c3-daad24ecc48c)
+
+Navigate to Resources --> Inventory
+![image](https://github.com/user-attachments/assets/0fe420e8-aafd-4d8e-8dc3-5129f85e08eb)
+Click "Add"
+![image](https://github.com/user-attachments/assets/e4dbb2a2-238a-4908-ae39-9a7920a967f4)
+Select "Add inventory"
+![image](https://github.com/user-attachments/assets/387cb834-b345-48db-972f-8274bb425941)
+![image](https://github.com/user-attachments/assets/8270acb9-70cf-4d73-8840-ec4d980e42a4)
+Click "Save"
+![image](https://github.com/user-attachments/assets/09d377c9-76c9-483a-9a91-bee1bc6a0da9)
+
+In order add "Hosts" into the Inventory, click on "Hosts" Tab
+![image](https://github.com/user-attachments/assets/2aaf4bdc-3cf7-4ff3-a7b8-321fa45fea78)
+![image](https://github.com/user-attachments/assets/12b80d14-04d1-4330-867c-1eeb3452ecfa)
+Click "Add"
+![image](https://github.com/user-attachments/assets/8cbc6360-5533-4c4e-a865-7bb9a97ffb99)
+Find the IP address of your lab machine
+```
+sudo apt install -y net-tools
+ifconfig ens160
+```
+![image](https://github.com/user-attachments/assets/f65585e9-523d-4221-9a18-9efe1da8da77)
+![image](https://github.com/user-attachments/assets/a2c981cf-2b35-4a8b-9dee-64dde29c6dc7)
+```
+ansible_port: 2001
+ansible_user: root
+ansible_host: 192.168.2.176
+```
+![image](https://github.com/user-attachments/assets/f6ddfcfd-0b0b-4d5c-906e-2905bb05d0c6)
+Click "Save"
+![image](https://github.com/user-attachments/assets/2b611532-d4a3-4a31-82f6-f8ea649e1280)
+
+Let's add Ubuntu2
+```
+ansible_port: 2002
+ansible_user: root
+ansible_host: 192.168.2.176
+```
+![image](https://github.com/user-attachments/assets/fb65728f-871d-468f-b47d-7a8333cb3d04)
+Click "Add"
+![image](https://github.com/user-attachments/assets/6e760a12-7fb1-438a-9368-4d5cd42b5479)
+Click "Save"
+![image](https://github.com/user-attachments/assets/1653d574-5f27-4a8f-93cb-1411cecbcd2e)
+
+Let's add Rocky1
+```
+ansible_port: 2003
+ansible_user: root
+ansible_host: 192.168.2.176
+```
+![image](https://github.com/user-attachments/assets/dbaaf328-f421-45b7-8b5b-ea8e725567df)
+Click "Save"
+
+Let's add Rocky2
+![image](https://github.com/user-attachments/assets/e7637451-0164-48d3-a0cf-5692e6e1f329)
+![image](https://github.com/user-attachments/assets/9ac0e090-9045-44a4-8eaf-1ec29720d7fe)
+Click "Save"
+![image](https://github.com/user-attachments/assets/0bfc5abb-83f7-46d8-ae0e-8c84510dd6ff)
+
+![image](https://github.com/user-attachments/assets/185eadf9-90f3-45e7-86e2-f58406a8cb40)
+
+## Lab - Create a Job Template to invoke Ansible Playbook from Ansible Tower
+Open your Ansible Tower Dashboard
+![image](https://github.com/user-attachments/assets/d8b7b733-149f-4bcd-a8c3-daad24ecc48c)
+
+Navigate to Resources --> Templates
+![image](https://github.com/user-attachments/assets/2ad8e99a-7228-450d-ae26-1f780e152c1a)
+Click "Add"
+![image](https://github.com/user-attachments/assets/1894b68f-930e-4fc4-9acf-a2a055a7221a)
+Select "Add Job Template"
+![image](https://github.com/user-attachments/assets/a3c22fec-5fce-4359-aac4-2e80e2282cbd)
+![image](https://github.com/user-attachments/assets/3574dc41-bd76-4ce0-9b69-9b124c07ece2)
+![image](https://github.com/user-attachments/assets/0f451e49-9d78-4040-b393-e512cb203d0d)
+![image](https://github.com/user-attachments/assets/03b5fc67-d46a-45cf-8a52-f608cde3e250)
+![image](https://github.com/user-attachments/assets/a731c9ab-da0e-432c-85fa-1c4cd969bdb8)
+![image](https://github.com/user-attachments/assets/de680afc-cc1d-4175-a81a-179936d1d3a6)
+![image](https://github.com/user-attachments/assets/0efcfcf6-020c-4313-8c6f-c5ac80462092)
+Click "Save"
+![image](https://github.com/user-attachments/assets/55a599e2-09d7-4ff7-a17a-7bd7976c99d2)
+![image](https://github.com/user-attachments/assets/5908d44b-be86-42f0-be27-356802cd3fd9)
+![image](https://github.com/user-attachments/assets/b3ba31b4-b7de-4901-9e49-815a77efd4d1)
+![image](https://github.com/user-attachments/assets/594bac11-901a-49e0-8746-f34f9b5c2cd3)
+
+## Lab - Installing tower cli
+```
+sudo apt install -y python3-pip
+pip install ansible-tower-cli --break-system-packages
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/a5800d97-d9f0-4229-8476-cc4d15eed5ed)
+![image](https://github.com/user-attachments/assets/95b1f71d-0dbe-42fb-a6a8-cae788fbafb9)
+
+## Lab - Using tower-cli
+```
+export PATH=$PATH:/home/rps/.local/bin
+tower-cli config host https://192.168.49.2/31225
+tower-cli config username admin
+tower-cli config password your-admin-password
+tower-cli config verify_ssl false
+tower-cli project list
+```
+
+## Info - Golang Overview
+<pre>
+- golang is developed by Google in C Programming language
+- it is faster than any interpretter based languages like Ruby, Python, etc.,
+- it is also faster than most compiler based programming languages
+- it is a compiler
+- golang syntax resembles like C programming language
+- golang remove all confusing features, keeping only useful, non-confusing features
+- golang avoid memory management issues we have in C/C++
+- golang support about 25 keywords
+</pre>
+
+## Lab - Running your first hello world go program
+Create a file named hello.go with the below content
+```
+package main 
+
+import "fmt"
+
+func main() {
+  fmt.Println( "Hello Golang !" )
+}
+```
+
+To run the program
+```
+go run ./hello.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/a35a084c-d005-49a2-992a-7a18191383c4)
