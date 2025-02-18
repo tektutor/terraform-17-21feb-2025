@@ -182,3 +182,14 @@ ansible-playbook playbook.yml
 Expected output
 ![image](https://github.com/user-attachments/assets/2aeec98d-7ea8-460a-91fa-fc9c5e9fd175)
 ![image](https://github.com/user-attachments/assets/6f538e8a-8fcf-447b-a757-cfc54b7529c1)
+
+## Lab - Starting Ansible Tower (aka Ansible Automation Platform)
+```
+minikube status
+minikube start
+kubectl get pods -n ansible-awx
+kubectl get svc -n ansible-awx
+minikube service awx-demo-service --url -n ansible-awx
+```
+
+Expected output
