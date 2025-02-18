@@ -419,3 +419,8 @@ Expected output
 ![image](https://github.com/user-attachments/assets/64b402f2-dd7d-4113-a8c0-e10cd939b3bd)
 ![image](https://github.com/user-attachments/assets/4ce27e6c-b1c4-41b4-9aee-16918d4bdd62)
 ![image](https://github.com/user-attachments/assets/8be5d12f-0b5c-4406-b25f-03e46cfc5bd8)
+
+## Lab - Installing visual studio code editor in Ubuntu
+```
+sudo snap install code --classic
+```
