@@ -43,3 +43,15 @@ exit
 
 Expected output
 ![image](https://github.com/user-attachments/assets/c0f919dc-f5d5-4fc2-95fe-68546790af42)
+
+## Lab - Let's add rocky ansible node containers to ansible static inventory
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day2/ansible
+cat hosts
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/50ecbe2c-fb70-4aa0-bd34-1d4ba68bbb52)
+![image](https://github.com/user-attachments/assets/843e3e7c-34c3-4fa1-ba1c-cfca911c977b)
