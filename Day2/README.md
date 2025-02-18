@@ -167,3 +167,7 @@ ansible-vault edit mysql-credentials.yml
 ```
 Expected output
 ![image](https://github.com/user-attachments/assets/5b63fc8c-8cb3-4997-ab9f-a830da8d8486)
+
+## Lab - Using vault-protected data in playbook
+```
+```
