@@ -131,3 +131,17 @@ Expected output
 ![image](https://github.com/user-attachments/assets/be7aa7ca-b495-4de6-8614-e49b25b4a1a0)
 ![image](https://github.com/user-attachments/assets/18a2e8c1-d53b-4299-a96a-0d95ed90affc)
 
+Invoking the ansible role from an ansible playbook
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day2/ansible
+cat playbook.yml
+ansible-playbook -i hosts playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/7fcfdc81-5aa1-4b32-9d2c-74d61929cf2d)
+![image](https://github.com/user-attachments/assets/04dc195a-f796-4751-aa79-9e3d46012560)
+![image](https://github.com/user-attachments/assets/6dc063a1-46ac-4aad-b154-934ef2c8bcfd)
+![image](https://github.com/user-attachments/assets/783a1ede-f562-4456-b692-f5e498e5e817)
