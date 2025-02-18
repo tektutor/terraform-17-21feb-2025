@@ -175,8 +175,10 @@ When ansible prompts for password type 'root' without quotes
 cd ~/terraform-17-21feb-2025
 git pull
 cd Day2/ansible/vault
+cat mysql-credentials.yml
 ansible-playbook playbook.yml
 ```
 
 Expected output
 ![image](https://github.com/user-attachments/assets/2aeec98d-7ea8-460a-91fa-fc9c5e9fd175)
+![image](https://github.com/user-attachments/assets/6f538e8a-8fcf-447b-a757-cfc54b7529c1)
