@@ -282,3 +282,31 @@ ansible_host: 192.168.2.176
 ![image](https://github.com/user-attachments/assets/f6ddfcfd-0b0b-4d5c-906e-2905bb05d0c6)
 Click "Save"
 ![image](https://github.com/user-attachments/assets/2b611532-d4a3-4a31-82f6-f8ea649e1280)
+
+Let's add Ubuntu2
+```
+ansible_port: 2002
+ansible_user: root
+ansible_host: 192.168.2.176
+```
+![image](https://github.com/user-attachments/assets/fb65728f-871d-468f-b47d-7a8333cb3d04)
+Click "Add"
+![image](https://github.com/user-attachments/assets/6e760a12-7fb1-438a-9368-4d5cd42b5479)
+Click "Save"
+![image](https://github.com/user-attachments/assets/1653d574-5f27-4a8f-93cb-1411cecbcd2e)
+
+Let's add Rocky1
+```
+ansible_port: 2003
+ansible_user: root
+ansible_host: 192.168.2.176
+```
+![image](https://github.com/user-attachments/assets/dbaaf328-f421-45b7-8b5b-ea8e725567df)
+Click "Save"
+
+Let's add Rocky2
+![image](https://github.com/user-attachments/assets/e7637451-0164-48d3-a0cf-5692e6e1f329)
+![image](https://github.com/user-attachments/assets/9ac0e090-9045-44a4-8eaf-1ec29720d7fe)
+Click "Save"
+![image](https://github.com/user-attachments/assets/0bfc5abb-83f7-46d8-ae0e-8c84510dd6ff)
+
