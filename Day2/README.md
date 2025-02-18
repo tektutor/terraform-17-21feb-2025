@@ -194,3 +194,19 @@ minikube service awx-demo-service --url -n ansible-awx
 
 Expected output
 ![image](https://github.com/user-attachments/assets/38345bed-47d7-4570-8f7a-bd426efefd30)
+![image](https://github.com/user-attachments/assets/18d8356c-0499-44c2-b2c2-59e35aee1b8c)
+
+
+Ansible Tower Login Credentials
+Retrieving Ansible Tower password
+```
+kubectl get secret -n ansible-awx | grep -i password
+kubectl get secret awx-demo-admin-password -o jsonpath="{.data.password}" -n ansible-awx | base64 --decode; echo
+```
+
+<pre>
+username - admin
+password - 
+</pre>
+
+Expected output
