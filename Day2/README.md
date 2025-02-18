@@ -80,3 +80,25 @@ ansible -i ./dynamic-inventory.py all -m ping
 Expected output
 ![image](https://github.com/user-attachments/assets/7c854ea3-7528-47ce-a673-73e0ea286eae)
 ![image](https://github.com/user-attachments/assets/a68bacd7-df58-42ac-be9c-b49ed8285368)
+
+## Lab - Running the playbook on different Linux distributions
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day2/ansible
+cat playbook.yml
+ansible-playbook -i hosts playbook.yml
+curl http://localhost:8001
+curl http://localhost:8002
+curl http://localhost:8003
+curl http://localhost:8004
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/473b6aee-1484-4b08-aab7-90de543f07c5)
+![image](https://github.com/user-attachments/assets/67e4cc17-82be-47e5-9b36-ec114be7fd06)
+![image](https://github.com/user-attachments/assets/eddaa3b0-19ac-4a03-b95e-8834da6d6986)
+![image](https://github.com/user-attachments/assets/4656a5e5-45b5-423f-bcf4-3170ce43d161)
+![image](https://github.com/user-attachments/assets/803bc3e7-01cc-41a8-b269-bc6cfcc36726)
+![image](https://github.com/user-attachments/assets/fe071165-14cb-4cf5-b3bc-acbd597d29dd)
+![image](https://github.com/user-attachments/assets/eee97125-d443-4863-baa5-4ab2c2a00963)
