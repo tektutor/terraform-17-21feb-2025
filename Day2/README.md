@@ -365,3 +365,23 @@ tower-cli project list
 - golang avoid memory management issues we have in C/C++
 - golang support about 25 keywords
 </pre>
+
+## Lab - Running your first hello world go program
+Create a file named hello.go with the below content
+```
+package main 
+
+import "fmt"
+
+func main() {
+  fmt.Println( "Hello Golang !" )
+}
+```
+
+To run the program
+```
+go run ./hello.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/a35a084c-d005-49a2-992a-7a18191383c4)
