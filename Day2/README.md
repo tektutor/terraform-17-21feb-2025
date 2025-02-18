@@ -55,3 +55,28 @@ cat hosts
 Expected output
 ![image](https://github.com/user-attachments/assets/50ecbe2c-fb70-4aa0-bd34-1d4ba68bbb52)
 ![image](https://github.com/user-attachments/assets/843e3e7c-34c3-4fa1-ba1c-cfca911c977b)
+
+## Lab - Ansible static inventory vs dynamic inventory
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day2/ansible
+cat hosts
+cat dynamic-inventory.py
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/e261dac4-302b-4df7-8983-b82cd904dbb2)
+![image](https://github.com/user-attachments/assets/39aa7f6c-4543-4428-bf21-53e4d1428d73)
+![image](https://github.com/user-attachments/assets/1b70ef4e-caa6-4a7e-8cf0-4423cea3913e)
+
+
+We can run ansible ad-hoc command using static or dynamic inventory
+```
+ansible -i hosts all -m ping
+ansible -i ./dynamic-inventory.py all -m ping
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/7c854ea3-7528-47ce-a673-73e0ea286eae)
+![image](https://github.com/user-attachments/assets/a68bacd7-df58-42ac-be9c-b49ed8285368)
