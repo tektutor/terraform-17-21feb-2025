@@ -330,3 +330,6 @@ Select "Add Job Template"
 ![image](https://github.com/user-attachments/assets/0efcfcf6-020c-4313-8c6f-c5ac80462092)
 Click "Save"
 ![image](https://github.com/user-attachments/assets/55a599e2-09d7-4ff7-a17a-7bd7976c99d2)
+![image](https://github.com/user-attachments/assets/5908d44b-be86-42f0-be27-356802cd3fd9)
+![image](https://github.com/user-attachments/assets/b3ba31b4-b7de-4901-9e49-815a77efd4d1)
+![Uploading image.png…]()
