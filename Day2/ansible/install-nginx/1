@@ -1,0 +1,50 @@
+- name: Install nginx, configure web root folder, deploy custom html page
+  hosts: all
+  tasks:
+  - name: Install nginx web server into Ubuntu ansible nodes
+    when: ( ansible_distribution == "Ubuntu"  and ansible_os_family == "Debian" )
+    apt: name=nginx state=latest update_cache=yes
+
+  - name: Install Extra Packages for Enterprise Linux(EPEL) in Rocky
+    when: ( ansible_distribution == "Rocky"  and ansible_os_family == "RedHat" )
+    yum: name=epel-release state=latest
+
+  - name: Install nginx web server into Rocky ansible nodes
+    when: ( ansible_distribution == "Rocky"  and ansible_os_family == "RedHat" )
+    yum: name=nginx state=latest 
+
+  - name: Start nginx server in Ubuntu
+    when: ( ansible_distribution == "Ubuntu"  and ansible_os_family == "Debian" )
+    service: name=nginx state=started enabled=true
+
+  - name: Check if nginx is already running in Rocky
+    when: ( ansible_distribution == "Rocky"  and ansible_os_family == "RedHat" )
+    shell: curl localhost
+    register: output
+    ignore_errors: yes
+
+  - debug: var=output
+    when: ( ansible_distribution == "Rocky"  and ansible_os_family == "RedHat" )
+
+  - name: Start nginx server in Rocky 
+    when: ( ansible_distribution == "Rocky"  and ansible_os_family == "RedHat" and output.rc !=0 )
+    shell: nginx 
+
+  - name: Create custom web root folder
+    file: path=/var/html state=directory mode=0777
+
+  - name: Configure nginx to use our custom folder while serving html pages in Ubuntu
+    when: ( ansible_distribution == "Ubuntu"  and ansible_os_family == "Debian" )
+    copy: src=default dest=/etc/nginx/sites-available/default
+
+  - name: Configure nginx to use our custom folder while serving html pages in Rocky 
+    when: ( ansible_distribution == "Rocky"  and ansible_os_family == "RedHat" and output.rc !=0 )
+    copy: src=nginx.conf dest=/etc/nginx/nginx.conf
+
+  - name: Restart nginx service to apply the config changes
+    service: name=nginx state=restarted
+
+  - name: Deploy custom html web page
+    copy: src=index.html dest=/var/html/index.html
+
+
