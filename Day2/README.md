@@ -247,3 +247,17 @@ cat ~/.ssh/id_ed25519
 ![image](https://github.com/user-attachments/assets/96a1959e-69e4-4f4a-a273-9a1fae432312)
 Click "Save"
 ![image](https://github.com/user-attachments/assets/b3565331-9430-4494-8e44-146f4a7d126e)
+
+## Lab - Let's create an Inventory in Ansible Tower
+Open your Ansible Tower Dashboard
+![image](https://github.com/user-attachments/assets/d8b7b733-149f-4bcd-a8c3-daad24ecc48c)
+
+Navigate to Resources --> Inventory
+![image](https://github.com/user-attachments/assets/0fe420e8-aafd-4d8e-8dc3-5129f85e08eb)
+Click "Add"
+![image](https://github.com/user-attachments/assets/e4dbb2a2-238a-4908-ae39-9a7920a967f4)
+Select "Add inventory"
+![image](https://github.com/user-attachments/assets/387cb834-b345-48db-972f-8274bb425941)
+![image](https://github.com/user-attachments/assets/8270acb9-70cf-4d73-8840-ec4d980e42a4)
+Click "Save"
+![image](https://github.com/user-attachments/assets/09d377c9-76c9-483a-9a91-bee1bc6a0da9)
