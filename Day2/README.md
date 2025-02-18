@@ -229,3 +229,18 @@ Click "Save"
 ![image](https://github.com/user-attachments/assets/bca2d424-a33a-4de5-b193-39f9819b3015)
 ![image](https://github.com/user-attachments/assets/f21840f7-9d84-499f-9977-2f841111533f)
 ![image](https://github.com/user-attachments/assets/c9a2f9ef-87ee-44c3-b050-6c6933652316)
+
+## Lab - Create a credential to store Private Key within Ansible Tower
+Open your Ansible Tower Dashboard
+![image](https://github.com/user-attachments/assets/d8b7b733-149f-4bcd-a8c3-daad24ecc48c)
+
+Navigate to Resources --> Credentials
+![image](https://github.com/user-attachments/assets/f538e21b-6e0c-4208-a684-049e72b1f9ad)
+Click "Add"
+![image](https://github.com/user-attachments/assets/0360f6d3-5e47-4452-b715-6f210cf51f67)
+![image](https://github.com/user-attachments/assets/2d8ca5ce-bdd3-4bda-b970-24569d71781e)
+![image](https://github.com/user-attachments/assets/94af92dd-675c-4266-80d7-ec25ed546d83)
+![image](https://github.com/user-attachments/assets/ecd566b0-dd7a-4403-a6db-7cb8189fb142)
+![image](https://github.com/user-attachments/assets/96a1959e-69e4-4f4a-a273-9a1fae432312)
+Click "Save"
+![image](https://github.com/user-attachments/assets/b3565331-9430-4494-8e44-146f4a7d126e)
