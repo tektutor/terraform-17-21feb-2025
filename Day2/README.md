@@ -210,3 +210,4 @@ password -
 </pre>
 
 Expected output
+![image](https://github.com/user-attachments/assets/bd2aeeb4-73d3-422c-89a5-5515329fb12b)
