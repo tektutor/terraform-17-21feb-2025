@@ -144,7 +144,6 @@ For example
   - The same set of Linux tools are supported by the above linux OS
   - Shells,bash shell, sh shell, etc.
 - Different Linux distributions support different Package Managers
-
 </pre>  
 
 ## Info - Package manager
