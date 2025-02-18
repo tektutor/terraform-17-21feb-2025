@@ -1,0 +1,2 @@
+- name: Configure nginx to use our custom folder while serving html pages in Rocky 
+  copy: src=nginx.conf dest=/etc/nginx/nginx.conf

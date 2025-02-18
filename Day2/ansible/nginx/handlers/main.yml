@@ -1,0 +1,9 @@
+---
+# handlers file for nginx
+- name: Restart nginx service to apply the config changes in Ubuntu
+  when: ( ansible_distribution == "Ubuntu"  and ansible_os_family == "Debian" )
+  service: name=nginx state=restarted
+
+- name: Restart nginx service to apply the config changes in Rocky 
+  when: ( ansible_distribution == "Rocky"  and ansible_os_family == "RedHat" )
+  shell: nginx -s stop && nginx 
