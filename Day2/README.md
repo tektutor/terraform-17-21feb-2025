@@ -416,3 +416,4 @@ go run ./variables.go
 Expected output
 ![image](https://github.com/user-attachments/assets/9c46a535-5104-4b41-927c-1b24a764f990)
 ![image](https://github.com/user-attachments/assets/ec5f6111-2400-4844-b736-8080f080b520)
+![image](https://github.com/user-attachments/assets/64b402f2-dd7d-4113-a8c0-e10cd939b3bd)
