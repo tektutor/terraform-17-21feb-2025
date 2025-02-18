@@ -239,6 +239,9 @@ Navigate to Resources --> Credentials
 Click "Add"
 ![image](https://github.com/user-attachments/assets/0360f6d3-5e47-4452-b715-6f210cf51f67)
 ![image](https://github.com/user-attachments/assets/2d8ca5ce-bdd3-4bda-b970-24569d71781e)
+```
+cat ~/.ssh/id_ed25519
+```
 ![image](https://github.com/user-attachments/assets/94af92dd-675c-4266-80d7-ec25ed546d83)
 ![image](https://github.com/user-attachments/assets/ecd566b0-dd7a-4403-a6db-7cb8189fb142)
 ![image](https://github.com/user-attachments/assets/96a1959e-69e4-4f4a-a273-9a1fae432312)
