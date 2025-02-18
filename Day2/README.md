@@ -346,10 +346,15 @@ Expected output
 
 ## Lab - Using tower-cli
 ```
+export PATH=$PATH:/home/rps/.local/bin
 tower-cli config host https://192.168.49.2/31225
 tower-cli config username admin
 tower-cli config password your-admin-password
 tower-cli config verify_ssl false
 tower-cli project list
-
 ```
+
+## Info - Golang Overview
+<pre>
+- golang   
+</pre>
