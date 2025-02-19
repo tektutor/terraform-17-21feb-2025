@@ -88,3 +88,14 @@ Expected output
 ![image](https://github.com/user-attachments/assets/c5d51db8-5278-4608-bded-c747835ba3fe)
 ![image](https://github.com/user-attachments/assets/c0290c81-49c2-4d3b-b074-f6da5083a60d)
 ![image](https://github.com/user-attachments/assets/34879507-862e-4f77-9e3e-c0a9b1b1033a)
+
+## Lab - Golang map
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day3/golang
+go run ./map.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/de89164a-b3dd-402b-bef2-c98e6dd69f34)
