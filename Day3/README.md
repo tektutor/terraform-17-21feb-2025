@@ -210,3 +210,27 @@ Expected output
   - to provision resources in Azure, terraform depends on Azure provider
 - Providers are implemented in Golang
 </pre>
+
+## Lab - Pulling docker image using Terraform
+Terraform init will download all the required providers in the current directory a hidden folder named .terraform
+
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day3/terraform/pull-docker-image
+cat main.tf
+terraform init
+ls -lha
+tree .terraform
+terraform plan
+terraform apply
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/fa11f0eb-9f3a-41c6-891b-94ce998a9765)
+![image](https://github.com/user-attachments/assets/08fb5018-f47f-4666-b6e1-679041cf95c4)
+![image](https://github.com/user-attachments/assets/23743328-4af2-431e-8de0-91824e6df03b)
+![image](https://github.com/user-attachments/assets/7bfbf657-c97a-4f73-8682-d30a111339b9)
+![image](https://github.com/user-attachments/assets/9d148049-3c3a-4c79-b351-3f5da3aee8db)
+
+
