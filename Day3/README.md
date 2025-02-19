@@ -1,5 +1,17 @@
 # Day 3
 
+## Info - Golang basic data types
+<pre>
+- bool
+- string
+- int, int8, int16, int32, int64
+- uint, uint8, uint16, uint32, uint64,, uintptr
+- byte ( alias of uint8 )
+- rune ( alias for int32 - represents a unicode )
+- float32, float64
+- complex64, complex128
+</pre>
+
 ## Lab - Writing an user-defined function and invoking it from main in golang
 
 Create a file named invoking-user-defined-functions.go with the below content
@@ -37,3 +49,28 @@ go run ./loops.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/37d2e280-6879-45eb-8919-459bf8ecae54)
+
+## Lab - Switch case
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day3/golang
+cat switch-case.go
+go run ./cat switch-case.go 
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/4908f4ff-e66d-4d02-aa74-35edecd1bc4b)
+
+## Lab - Golan arrays
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day3/golang
+cat arrays.go
+go run ./arrays.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/b79deb0b-09c5-4945-9270-281bb96995ee)
+![image](https://github.com/user-attachments/assets/1907bb33-cc15-4413-831c-7b057c47f18c)
