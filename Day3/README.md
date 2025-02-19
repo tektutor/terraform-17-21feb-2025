@@ -74,3 +74,17 @@ go run ./arrays.go
 Expected output
 ![image](https://github.com/user-attachments/assets/b79deb0b-09c5-4945-9270-281bb96995ee)
 ![image](https://github.com/user-attachments/assets/1907bb33-cc15-4413-831c-7b057c47f18c)
+
+## Lab - Golang slice
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day3/golang
+cat slice.go
+go run ./slice.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/c5d51db8-5278-4608-bded-c747835ba3fe)
+![image](https://github.com/user-attachments/assets/c0290c81-49c2-4d3b-b074-f6da5083a60d)
+![image](https://github.com/user-attachments/assets/34879507-862e-4f77-9e3e-c0a9b1b1033a)
