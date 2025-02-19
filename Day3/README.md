@@ -24,3 +24,16 @@ go run ./invoking-user-defined-functions.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/5652a04e-1691-46aa-9463-ce6b979acb9d)
+
+
+## Lab - Loops in golang
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day3/golan
+cat ./loops.go
+go run ./loops.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/37d2e280-6879-45eb-8919-459bf8ecae54)
