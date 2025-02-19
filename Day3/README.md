@@ -211,6 +211,9 @@ Expected output
 - Providers are implemented in Golang
 </pre>
 
+## Info - Installing Terraform on your OS
+https://developer.hashicorp.com/terraform/install?product_intent=terraform
+
 ## Lab - Pulling docker image using Terraform
 Terraform init will download all the required providers in the current directory a hidden folder named .terraform
 
