@@ -112,3 +112,128 @@ go run ./struct.go
 Expected output
 ![image](https://github.com/user-attachments/assets/c5c20c40-2f8b-4d2b-8dcd-6d62a492b2ba)
 
+## Lab - Create custom go modules
+
+In this exercise, we will be creating two custom go modules, namely hello and tektutor.  Hence in your home, create two folder at the same level namely hello and tektutor as shown below
+```
+cd ~
+mkdir hello tektutor
+cd hello
+go mod init tektutor.org/hello
+cat go.mod
+go mod tidy
+```
+
+Now let's create a file named hello.go under hello folder as shown below
+<pre>
+package hello
+
+import "fmt"
+
+func SayHello( name string ) string {
+   message := fmt.Sprintf("Hello, %v !", name )
+   return message
+}	
+</pre>
+
+Now, step out of hello folder and navigate to tektutor folder
+```
+cd ../tektutor
+go mod init tektutor.org/tektutor
+cat go.mod
+go mod tidy
+```
+
+Let's create a main.go with the below code
+<pre>
+package main
+
+import (
+  "fmt"
+  "tektutor.org/hello"
+)
+
+func main() {
+	msg := hello.SayHello("Golang")
+	fmt.Println(msg)
+}	
+</pre>
+
+Now, let's run the below command under tektutor folder
+```
+cd ~/tektutor
+go mod tidy
+go mod edit --replace tektutor.org/hello=../hello
+go mod tidy
+go run ./main.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/f397071b-edde-4b64-8f44-edc8ac411353)
+
+## Lab - Module versioning
+```
+cd ~
+cd hello
+tree
+cat v2/go.mod
+cat v2/hello.go
+cd ../tektutor
+cat main.go
+go mod edit --replace tektutor.org/hello/v2=../hello/v2
+go mod tidy
+go run ./main.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/2d99e29a-267e-4f6e-8f03-dc5c20c43139)
+![image](https://github.com/user-attachments/assets/6e2db257-db6d-422f-8588-aadfc7044924)
+
+## Info - Terraform Overview
+<pre>
+- Terraform is a IOC tool, i.e Infrastructure as a Code tool
+- it is used for automatting provisioning activities
+- Terraform can automate infrastructure provisioning in a on-premise, private cloud, public cloud or hybrid cloud
+- examples
+  - creating an ec2 instance in AWS
+  - creating a virtual machine with certain hardware configures and install Unix/Linux/Mac/Windows OS in it
+  - creating a docker container
+- Terraform comes in 2 flavours
+  - Terraform Core ( open source )
+  - Terraform Enterprise ( Paid )
+- Terraform is implemented in Golang by HashiCorp
+- Terraform uses a proprietary DSL(Domain specific language) language called HCL (Hashicorp Configuration Language )
+- Using HCL,one can declaratively provision infrastructure locally or in cloud
+- Terraform depends on Providers to manage infrastructure
+- For example
+  - to provision resources in AWS, terraform depends on AWS provider
+  - to provision resources in Azure, terraform depends on Azure provider
+- Providers are implemented in Golang
+</pre>
+
+## Info - Installing Terraform on your OS
+https://developer.hashicorp.com/terraform/install?product_intent=terraform
+
+## Lab - Pulling docker image using Terraform
+Terraform init will download all the required providers in the current directory a hidden folder named .terraform
+
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day3/terraform/pull-docker-image
+cat main.tf
+terraform init
+ls -lha
+tree .terraform
+terraform plan
+terraform apply
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/fa11f0eb-9f3a-41c6-891b-94ce998a9765)
+![image](https://github.com/user-attachments/assets/08fb5018-f47f-4666-b6e1-679041cf95c4)
+![image](https://github.com/user-attachments/assets/23743328-4af2-431e-8de0-91824e6df03b)
+![image](https://github.com/user-attachments/assets/7bfbf657-c97a-4f73-8682-d30a111339b9)
+![image](https://github.com/user-attachments/assets/9d148049-3c3a-4c79-b351-3f5da3aee8db)
+
+
