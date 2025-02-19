@@ -188,3 +188,25 @@ go run ./main.go
 Expected output
 ![image](https://github.com/user-attachments/assets/2d99e29a-267e-4f6e-8f03-dc5c20c43139)
 ![image](https://github.com/user-attachments/assets/6e2db257-db6d-422f-8588-aadfc7044924)
+
+## Info - Terraform Overview
+<pre>
+- Terraform is a IOC tool, i.e Infrastructure as a Code tool
+- it is used for automatting provisioning activities
+- Terraform can automate infrastructure provisioning in a on-premise, private cloud, public cloud or hybrid cloud
+- examples
+  - creating an ec2 instance in AWS
+  - creating a virtual machine with certain hardware configures and install Unix/Linux/Mac/Windows OS in it
+  - creating a docker container
+- Terraform comes in 2 flavours
+  - Terraform Core ( open source )
+  - Terraform Enterprise ( Paid )
+- Terraform is implemented in Golang by HashiCorp
+- Terraform uses a proprietary DSL(Domain specific language) language called HCL (Hashicorp Configuration Language )
+- Using HCL,one can declaratively provision infrastructure locally or in cloud
+- Terraform depends on Providers to manage infrastructure
+- For example
+  - to provision resources in AWS, terraform depends on AWS provider
+  - to provision resources in Azure, terraform depends on Azure provider
+- Providers are implemented in Golang
+</pre>
