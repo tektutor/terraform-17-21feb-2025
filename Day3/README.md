@@ -227,6 +227,7 @@ ls -lha
 tree .terraform
 terraform plan
 terraform apply
+terraform show
 ```
 
 Expected output
