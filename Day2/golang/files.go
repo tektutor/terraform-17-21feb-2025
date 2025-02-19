@@ -14,7 +14,7 @@ func main() {
 		log.Fatal(error)
 	}
 
-	//Declar a string and initialize with some text
+	//Declare a string and initialize with some text
 	str := "This content will be stored in the file"
 
 	bytesWritten, error := myfile.WriteString( str +"\n" )
