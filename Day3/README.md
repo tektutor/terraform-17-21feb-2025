@@ -49,3 +49,15 @@ go run ./loops.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/37d2e280-6879-45eb-8919-459bf8ecae54)
+
+## Lab - Switch case
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day3/golang
+cat switch-case.go
+go run ./cat switch-case.go 
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/4908f4ff-e66d-4d02-aa74-35edecd1bc4b)
