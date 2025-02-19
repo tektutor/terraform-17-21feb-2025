@@ -38,7 +38,7 @@ Expected output
 ![image](https://github.com/user-attachments/assets/5652a04e-1691-46aa-9463-ce6b979acb9d)
 
 
-## Lab - Loops in golang
+## Lab - golang Loops
 ```
 cd ~/terraform-17-21feb-2025
 git pull
@@ -50,7 +50,7 @@ go run ./loops.go
 Expected output
 ![image](https://github.com/user-attachments/assets/37d2e280-6879-45eb-8919-459bf8ecae54)
 
-## Lab - Switch case
+## Lab - Golang Switch case
 ```
 cd ~/terraform-17-21feb-2025
 git pull
@@ -62,7 +62,7 @@ go run ./cat switch-case.go
 Expected output
 ![image](https://github.com/user-attachments/assets/4908f4ff-e66d-4d02-aa74-35edecd1bc4b)
 
-## Lab - Golan arrays
+## Lab - Golang arrays
 ```
 cd ~/terraform-17-21feb-2025
 git pull
@@ -74,3 +74,17 @@ go run ./arrays.go
 Expected output
 ![image](https://github.com/user-attachments/assets/b79deb0b-09c5-4945-9270-281bb96995ee)
 ![image](https://github.com/user-attachments/assets/1907bb33-cc15-4413-831c-7b057c47f18c)
+
+## Lab - Golang slice
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day3/golang
+cat slice.go
+go run ./slice.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/c5d51db8-5278-4608-bded-c747835ba3fe)
+![image](https://github.com/user-attachments/assets/c0290c81-49c2-4d3b-b074-f6da5083a60d)
+![image](https://github.com/user-attachments/assets/34879507-862e-4f77-9e3e-c0a9b1b1033a)
