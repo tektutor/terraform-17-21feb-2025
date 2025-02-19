@@ -112,3 +112,61 @@ go run ./struct.go
 Expected output
 ![image](https://github.com/user-attachments/assets/c5c20c40-2f8b-4d2b-8dcd-6d62a492b2ba)
 
+## Lab - Create custom go modules
+
+In this exercise, we will be creating two custom go modules, namely hello and tektutor.  Hence in your home, create two folder at the same level namely hello and tektutor as shown below
+```
+cd ~
+mkdir hello tektutor
+cd hello
+go mod init tektutor.org/hello
+cat go.mod
+go mod tidy
+```
+
+Now let's create a file named hello.go under hello folder as shown below
+<pre>
+package hello
+
+import "fmt"
+
+func SayHello( name string ) string {
+   message := fmt.Sprintf("Hello, %v !", name )
+   return message
+}	
+</pre>
+
+Now, step out of hello folder and navigate to tektutor folder
+```
+cd ../tektutor
+go mod init tektutor.org/tektutor
+cat go.mod
+go mod tidy
+```
+
+Let's create a main.go with the below code
+<pre>
+package main
+
+import (
+  "fmt"
+  "tektutor.org/hello"
+)
+
+func main() {
+	msg := hello.SayHello("Golang")
+	fmt.Println(msg)
+}	
+</pre>
+
+Now, let's run the below command under tektutor folder
+```
+cd ~/tektutor
+go mod tidy
+go mod edit --replace tektutor.org/hello=../hello
+go mod tidy
+go run ./main.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/f397071b-edde-4b64-8f44-edc8ac411353)
