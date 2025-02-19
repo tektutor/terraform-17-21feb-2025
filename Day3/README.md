@@ -61,3 +61,16 @@ go run ./cat switch-case.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/4908f4ff-e66d-4d02-aa74-35edecd1bc4b)
+
+## Lab - Golan arrays
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day3/golang
+cat arrays.go
+go run ./arrays.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/b79deb0b-09c5-4945-9270-281bb96995ee)
+![image](https://github.com/user-attachments/assets/1907bb33-cc15-4413-831c-7b057c47f18c)
