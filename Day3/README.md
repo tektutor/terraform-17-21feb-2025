@@ -170,3 +170,21 @@ go run ./main.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/f397071b-edde-4b64-8f44-edc8ac411353)
+
+## Lab - Module versioning
+```
+cd ~
+cd hello
+tree
+cat v2/go.mod
+cat v2/hello.go
+cd ../tektutor
+cat main.go
+go mod edit --replace tektutor.org/hello/v2=../hello/v2
+go mod tidy
+go run ./main.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/2d99e29a-267e-4f6e-8f03-dc5c20c43139)
+![image](https://github.com/user-attachments/assets/6e2db257-db6d-422f-8588-aadfc7044924)
