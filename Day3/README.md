@@ -1,5 +1,17 @@
 # Day 3
 
+## Info - Golang basic data types
+<pre>
+- bool
+- string
+- int, int8, int16, int32, int64
+- uint, uint8, uint16, uint32, uint64,, uintptr
+- byte ( alias of uint8 )
+- rune ( alias for int32 - represents a unicode )
+- float32, float64
+- complex64, complex128
+</pre>
+
 ## Lab - Writing an user-defined function and invoking it from main in golang
 
 Create a file named invoking-user-defined-functions.go with the below content
