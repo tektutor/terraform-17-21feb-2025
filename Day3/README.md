@@ -38,7 +38,7 @@ Expected output
 ![image](https://github.com/user-attachments/assets/5652a04e-1691-46aa-9463-ce6b979acb9d)
 
 
-## Lab - Loops in golang
+## Lab - golang Loops
 ```
 cd ~/terraform-17-21feb-2025
 git pull
@@ -50,7 +50,7 @@ go run ./loops.go
 Expected output
 ![image](https://github.com/user-attachments/assets/37d2e280-6879-45eb-8919-459bf8ecae54)
 
-## Lab - Switch case
+## Lab - Golang Switch case
 ```
 cd ~/terraform-17-21feb-2025
 git pull
@@ -62,7 +62,7 @@ go run ./cat switch-case.go
 Expected output
 ![image](https://github.com/user-attachments/assets/4908f4ff-e66d-4d02-aa74-35edecd1bc4b)
 
-## Lab - Golan arrays
+## Lab - Golang arrays
 ```
 cd ~/terraform-17-21feb-2025
 git pull
