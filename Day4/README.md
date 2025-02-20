@@ -52,4 +52,49 @@ cd Day4/terraform-provider-file
 We need to create a folder structure as shown below to create a custom terraform provider
 ![image](https://github.com/user-attachments/assets/38c991d8-1bf0-4325-875f-30d131621314)
 
+To configure terraform download the provider from local system.
+Create a folder 
+```
+mkdir -p /home/rps/go/bin
+```
+We need to create a file name ~/.terraformrc with the below content
+<pre>
+provider_installation {
+  dev_overrides {
+      "registry.terraform.io/tektutor/file" = "/home/rps/go/bin"
+  }
+  direct {}
+}  
+</pre>
+
+Let's try to build the terraform file provider
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day4/terraform-provider-file
+go mod tidy
+go build -o terraform-provider-file
+go install
+ls -l /home/rps/go/bin
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/17d07dc2-3708-47c7-8c7f-06a97f6aca36)
+
+
+## Lab - Invoking the custom terraform file provider in a terraform script
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day4/test-custom-terraform-file-provider
+terraform plan
+terraform apply
+terraform show
+terraform destroy --auto-approve
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/8779008e-81a9-4f34-91f0-e7753c587ec1)
+![image](https://github.com/user-attachments/assets/7c40ccf8-8df6-45c1-ae3f-90a84835e9e1)
+![image](https://github.com/user-attachments/assets/2688e145-75b3-42b4-bd98-9791e84fb021)
 
