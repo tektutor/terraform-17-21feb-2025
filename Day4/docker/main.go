@@ -33,6 +33,7 @@ func listDockerImages() {
 			tokens := strings.Split(image.RepoTags[0],":")
 			fmt.Println(tokens[0]+ ":" + tokens[1])
 			//fmt.Println(image.ID)
+			//fmt.Println(image.RepoTags)
 		}
 	}
 	fmt.Println("")
