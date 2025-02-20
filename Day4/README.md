@@ -82,3 +82,19 @@ Expected output
 ![image](https://github.com/user-attachments/assets/17d07dc2-3708-47c7-8c7f-06a97f6aca36)
 
 
+## Lab - Invoking the custom terraform file provider in a terraform script
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day4/test-custom-terraform-file-provider
+terraform plan
+terraform apply
+terraform show
+terraform destroy --auto-approve
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/8779008e-81a9-4f34-91f0-e7753c587ec1)
+![image](https://github.com/user-attachments/assets/7c40ccf8-8df6-45c1-ae3f-90a84835e9e1)
+![image](https://github.com/user-attachments/assets/2688e145-75b3-42b4-bd98-9791e84fb021)
+
