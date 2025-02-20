@@ -17,7 +17,7 @@ func listDockerImages() {
 	fmt.Println("List of Images in Local docker registry")
 	fmt.Println("")
 	ctx := context.Background()
-	cli, err := client.NewClientWithOpts(client.FromEnv, client.WithAPIVersionNegotiation())
+	cli, err := client.NewClientWithOpts(client.FromEnv, client.WithVersion("1.47"))
 	if err != nil {
 		panic(err)
 	}
@@ -40,7 +40,7 @@ func listDockerImages() {
 
 func pullDockerImage( imageName string ) {
 	ctx := context.Background()
-	cli, err := client.NewClientWithOpts(client.FromEnv, client.WithAPIVersionNegotiation())
+	cli, err := client.NewClientWithOpts(client.FromEnv, client.WithVersion("1.47"))
 	if err != nil {
 		panic(err)
 	}
@@ -77,7 +77,7 @@ func removeDockerImage( imageName string ) {
 */
 
 func listRunningDockerContainers() {
-	apiClient, err := client.NewClientWithOpts(client.FromEnv)
+	apiClient, err := client.NewClientWithOpts(client.FromEnv, client.WithVersion("1.47"))
 	if err != nil {
 		panic(err)
 	}
@@ -95,7 +95,7 @@ func listRunningDockerContainers() {
 
 func createNewDockerContainer( imageName string, containerName string ) {
 	ctx := context.Background()
-	cli, err := client.NewClientWithOpts(client.FromEnv, client.WithAPIVersionNegotiation())
+	cli, err := client.NewClientWithOpts(client.FromEnv, client.WithVersion("1.47"))
 	if err != nil {
 		panic(err)
 	}

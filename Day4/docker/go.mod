@@ -1,8 +1,8 @@
-module tektutor.org/m/v2
+module github.com/hashicorp/terraform-provider-docker
 
-go 1.23.6
+go 1.22.7
 
-require github.com/docker/docker v27.5.1+incompatible
+require github.com/docker/docker v28.0.0+incompatible
 
 require (
 	github.com/Microsoft/go-winio v0.4.14 // indirect
