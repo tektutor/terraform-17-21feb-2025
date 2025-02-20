@@ -27,3 +27,17 @@ terraform destroy --auto-approve
 Expected output
 ![image](https://github.com/user-attachments/assets/881d930c-fdbf-4fe3-a3a2-018d03a3c80b)
 ![image](https://github.com/user-attachments/assets/777b8a65-8713-4e92-ac52-6a5f27f10c48)
+
+## Lab - Using Docker SDK to manage docker resources in Golang
+The go mod tidy command will look for go.mod and scans all the *.go files present in the folder to fetch all import statements.  I then downloads all the dependencies including the indirect dependencies.  In this process, the go.mod gets updated, golang also creates the go.sum file with the download package versions along with their checksums.
+
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day4/docker
+go mod tidy
+go run ./main.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/0e8d6890-1fe2-44f3-9d82-8642cc192e6a)
