@@ -13,6 +13,12 @@ provider docker {
 
 }
 
-resource "docker_image" "ubuntu" {
-   name = "ubuntu:20.04"
+data "docker_image" "nginx" {
+   name = "nginx:latest"
+}
+
+resource "docker_container" "nginx_container1" {
+  image = data.docker_image.nginx.name
+  name  = "nginx1"
+  hostname = "nginx1"
 }
