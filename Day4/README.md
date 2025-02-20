@@ -41,3 +41,15 @@ go run ./main.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/0e8d6890-1fe2-44f3-9d82-8642cc192e6a)
+
+## Lab - Developing a custom Terraform Provider to manage text file
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day4/terraform-provider-file
+```
+
+We need to create a folder structure as shown below to create a custom terraform provider
+![image](https://github.com/user-attachments/assets/38c991d8-1bf0-4325-875f-30d131621314)
+
+
