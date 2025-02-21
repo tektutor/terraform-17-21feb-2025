@@ -17,6 +17,14 @@ pipeline {
                 }
             }
         }
+	stage("Configuration Management") {
+		steps {
+			timeout( time: 5, unit: "Minutes") {
+			   input message: 'Are we good to perform configuration management ?', ok: 'Yes'
+			}
+			echo "About to invoke Ansible playbook"
+		}
+	}
         stage('Invoke Terraform Automation Script') {
             steps {
                 script {

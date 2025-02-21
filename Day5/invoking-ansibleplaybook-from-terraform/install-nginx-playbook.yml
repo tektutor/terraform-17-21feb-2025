@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: Install nginx
-    apt: name=nginx state=latest update_cache=yes
+    apt: name=nginx,curl state=latest update_cache=yes
 
   - name: Start the nginx
     service: name=nginx enabled=true state=started
