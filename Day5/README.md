@@ -162,3 +162,7 @@ Download the Generic Java Package (war) file from the left side (LTS)
 <pre>
 wget https://get.jenkins.io/war-stable/2.492.1/jenkins.war
 </pre>
+
+Expected output
+![image](https://github.com/user-attachments/assets/066f4a54-d900-40fd-990d-584c96d0c1d9)
+![image](https://github.com/user-attachments/assets/f37f88a3-2082-4d5a-8150-caaeb3e3b0aa)
