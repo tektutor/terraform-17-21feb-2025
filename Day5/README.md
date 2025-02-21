@@ -185,3 +185,8 @@ http://localhost:8080
 
 Expected output
 ![image](https://github.com/user-attachments/assets/543fea33-0ac8-4e3c-817d-40bed8d816d3)
+
+You can copy the initial admin password from the web browser itself as shown below
+![image](https://github.com/user-attachments/assets/c3f6675f-2e1e-4e4a-abe4-76ead3154de9)
+![image](https://github.com/user-attachments/assets/30b159db-900c-4790-83b8-734b19ed1ddb)
+
