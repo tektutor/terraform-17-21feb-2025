@@ -196,3 +196,14 @@ Select "Install suggested plugins"
 ![image](https://github.com/user-attachments/assets/7d786bdd-0082-412f-86f7-f228b33fd985)
 ![image](https://github.com/user-attachments/assets/d8773a01-d2f3-44b8-984c-8961dda0e131)
 ![image](https://github.com/user-attachments/assets/44b84d06-c58e-4c64-9f78-80117102199f)
+![image](https://github.com/user-attachments/assets/115f9217-043b-41db-b824-24b9af753d66)
+![image](https://github.com/user-attachments/assets/08430ce7-bf31-4a5a-8c69-511414e49eec)
+![image](https://github.com/user-attachments/assets/025f0fb4-d48b-4829-aac6-723bf2171c3d)
+Click "Save and Continue"
+![image](https://github.com/user-attachments/assets/78b2f63e-98a2-4e55-b043-6921efc60571)
+Click "Save and Finish"
+![image](https://github.com/user-attachments/assets/b976ee8d-672a-47e3-9f30-873456c757e1)
+Click "Start using Jenkins"
+![image](https://github.com/user-attachments/assets/55d7757d-aead-45ca-8d2c-ef98e582b263)
+![image](https://github.com/user-attachments/assets/78cd113d-9ecb-44a0-8e4b-67b86178ca37)
+                                                            
