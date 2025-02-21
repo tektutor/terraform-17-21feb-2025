@@ -207,3 +207,64 @@ Click "Start using Jenkins"
 ![image](https://github.com/user-attachments/assets/55d7757d-aead-45ca-8d2c-ef98e582b263)
 ![image](https://github.com/user-attachments/assets/78cd113d-9ecb-44a0-8e4b-67b86178ca37)
                                                             
+## Lab - Creating a CI/CD DevOps Pipeline
+
+Open Jenkins Dashboard in RPS Lab machine, chrome web browser
+```
+http://localhost:8080
+```
+Expected output
+![image](https://github.com/user-attachments/assets/6fc5913b-3d17-480d-8f4a-741042319019)
+
+Click "Create job"
+![image](https://github.com/user-attachments/assets/d100ba90-8c24-4809-8883-374e52d496b7)
+Select "Pipeline", under the "Enter an item name" type "DevOps CICD Pipeline"
+![image](https://github.com/user-attachments/assets/21d58d32-5964-43a8-87a7-33f1b6ea601c)
+Click "Ok"
+![image](https://github.com/user-attachments/assets/939b442c-b793-47a7-b42e-f174e8f9c861)
+
+General Section
+![image](https://github.com/user-attachments/assets/54d633c0-8722-4b8b-9be5-ae99d6a4b015)
+
+Trigger Section
+![image](https://github.com/user-attachments/assets/088ebc3d-4ad5-4675-9e26-41a1bdeaded0)
+Select "Poll SCM", under Schedule type "H/02 * * * *" to configure polling every 2 minutes once.
+<pre>
+H/02 * * * *  
+</pre>
+![image](https://github.com/user-attachments/assets/15cd722e-b8a8-4073-92a2-8bf794543d62)
+
+
+Pipeline section
+![image](https://github.com/user-attachments/assets/7b81f0fe-ee3d-43af-8635-9713c77502ba)
+Select "Pipeline script from SCM"
+![image](https://github.com/user-attachments/assets/08b749dc-2754-4291-adbe-ffcbd45c2ca1)
+Under "SCM" select option "Git"
+![image](https://github.com/user-attachments/assets/9d13a5c8-a734-4a9b-a171-6c36211ed17f)
+![image](https://github.com/user-attachments/assets/3d33cfc4-d3c9-4978-ad60-dd3c68074ccd)
+You need to type the Repository URL
+<pre>
+https://github.com/tektutor/terraform-17-21feb-2025.git  
+</pre>
+
+You need to replace Branch specifier from "master" to "main"
+![image](https://github.com/user-attachments/assets/4b43799c-c660-4578-9269-a55b9ad1e4cb)
+
+Script Path
+![image](https://github.com/user-attachments/assets/edcc63ef-c609-4910-b5ab-be928c2afb71)
+Script Path has to modified to 
+<pre>
+Day5/DevOpsCICDPipeline/Jenkinsfile  
+</pre>
+![image](https://github.com/user-attachments/assets/63414dfb-aab5-4c3a-ab52-66fb71fa79e1)
+Click "Save" at the bottom
+![image](https://github.com/user-attachments/assets/d45fa93b-ed20-48b0-90de-716667bdc783)
+
+Status
+![image](https://github.com/user-attachments/assets/854db6de-05a7-4d73-8e33-1327f7a87d18)
+![image](https://github.com/user-attachments/assets/afbf186e-fa8e-4cab-a933-f6c97893621b)
+![image](https://github.com/user-attachments/assets/30c359d8-0516-427e-82e4-66e7d3ad6a3e)
+![image](https://github.com/user-attachments/assets/5f1ce0ec-4800-417e-9628-6eff098f2e3f)
+![image](https://github.com/user-attachments/assets/b91e1d36-51cc-4765-9e8b-5bf8d4622a47)
+![image](https://github.com/user-attachments/assets/ec43469d-c6a8-4b08-a265-c78ce11fca74)
+![image](https://github.com/user-attachments/assets/7f790928-1c40-4695-b3f3-bc95c139f1b7)
