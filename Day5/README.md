@@ -48,3 +48,22 @@
 - Use Infrastructure as Code Tools to override manual changes
 - Regularly monitor and audit infrastructure
 </pre>
+
+## Info - Monitoring
+<pre>
+- is the process of collecting and analyzing data from IT infrastructure, system and processes
+- using the data to improve business outcomes and drive value to the organization
+- collects data to help keep your infrastructure up and running without any downtime
+- Tools to
+  - Data Collection (Logs)
+  - Alerting
+  - Remediation
+  - Agent based monitoring
+  - Agentless monitoring
+  - Collecting Metrics
+- Examples
+  - Dynatrace
+  - DataDog
+  - Splunk
+  - Prometheus & Grafana
+</pre>
