@@ -17,12 +17,12 @@ pipeline {
                 }
             }
         }
-	stage("Configuration Management") {
+	stage("Invoke Terraform") {
 		steps {
 			timeout( time: 5, unit: "Minutes") {
-			   input message: 'Are we good to perform configuration management ?', ok: 'Yes'
+			   input message: 'Are we good to perform infrastructure automation ?', ok: 'Yes'
 			}
-			echo "About to invoke Ansible playbook"
+			echo "About to invoke Terraform ..."
 		}
 	}
         stage('Invoke Terraform Automation Script') {
@@ -35,5 +35,22 @@ pipeline {
                 }
             }
         }
+        stage('Invoke Ansible Playbook') {
+            steps {
+                script {
+		  dir("Day5/invoking-ansibleplaybook-from-terraform") {
+                    sh "ansible-playbook -i hosts install-nginx-playbook.yml"
+		  }
+                }
+            }
+        }
+        stage('Test if we are able to access web page from provisioned container') {
+            steps {
+                script {
+                    sh "curl http://localhost:8001"
+                }
+            }
+        }
+    }
     }
 }
