@@ -223,5 +223,28 @@ Select "Pipeline", under the "Enter an item name" type "DevOps CICD Pipeline"
 Click "Ok"
 ![image](https://github.com/user-attachments/assets/939b442c-b793-47a7-b42e-f174e8f9c861)
 
+General Section
+![image](https://github.com/user-attachments/assets/54d633c0-8722-4b8b-9be5-ae99d6a4b015)
 
+Triggers section
+![image](https://github.com/user-attachments/assets/7b81f0fe-ee3d-43af-8635-9713c77502ba)
+Select "Pipeline script from SCM"
+![image](https://github.com/user-attachments/assets/08b749dc-2754-4291-adbe-ffcbd45c2ca1)
+Under "SCM" select option "Git"
+![image](https://github.com/user-attachments/assets/9d13a5c8-a734-4a9b-a171-6c36211ed17f)
+![image](https://github.com/user-attachments/assets/3d33cfc4-d3c9-4978-ad60-dd3c68074ccd)
+You need to type the Repository URL
+<pre>
+https://github.com/tektutor/terraform-17-21feb-2025.git  
+</pre>
 
+You need to replace Branch specifier from "master" to "main"
+![image](https://github.com/user-attachments/assets/4b43799c-c660-4578-9269-a55b9ad1e4cb)
+
+Script Path
+![image](https://github.com/user-attachments/assets/edcc63ef-c609-4910-b5ab-be928c2afb71)
+Script Path has to modified to 
+<pre>
+Day5/DevOpsCICDPipeline/Jenkinsfile  
+</pre>
+![image](https://github.com/user-attachments/assets/63414dfb-aab5-4c3a-ab52-66fb71fa79e1)
