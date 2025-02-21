@@ -106,7 +106,6 @@ Expected output
 ![image](https://github.com/user-attachments/assets/ec019f41-f83d-45ce-aad8-212dbd9b395d)
 
 ## Info - Ansible Role
-<pre>
 - helps us reuse code between many playbooks
 - roles follows certain best practices and directory structures
 - role can't be executed directory
@@ -116,7 +115,6 @@ Expected output
   - we could an ansible role to install Mysql db server in Ubuntu, Rocky, RHEL, Windows ansible nodes, etc
   - we could an ansible role to install weblogic app server in Ubuntu, Rocky, RHEL and Windows ansible nodes
 - there is a tool called ansible-galaxy which can used to download/install opensource roles from galaxy web portal, or we could the tool to develop our own custom ansible role
-</pre>
 
 ## Lab - Creating a role to install nginx in Ubuntu and Rocky Linux ansible nodes
 ```
@@ -147,7 +145,6 @@ Expected output
 ![image](https://github.com/user-attachments/assets/783a1ede-f562-4456-b692-f5e498e5e817)
 
 ## Info - Ansible vault
-<pre>
 - ansible-vault can help in encrypting/decrypting sensitive information like password credentials, etc
 - the vault protected information can be retrieved safely and used within playbook
 - using ansible vault one can
@@ -157,7 +154,6 @@ Expected output
   - encrypt any text file
   - decrypt already ansible vault encrypted file
   - change the password of ansible vault file
-</pre>
 
 ## Lab - Ansible vault
 ```
@@ -204,10 +200,10 @@ kubectl get secret -n ansible-awx | grep -i password
 kubectl get secret awx-demo-admin-password -o jsonpath="{.data.password}" -n ansible-awx | base64 --decode; echo
 ```
 
-<pre>
+```
 username - admin
 password - 
-</pre>
+```
 
 Expected output
 ![image](https://github.com/user-attachments/assets/2047fc10-8373-4168-a630-f6d9631f9e41)
@@ -355,7 +351,6 @@ tower-cli project list
 ```
 
 ## Info - Golang Overview
-<pre>
 - golang is developed by Google in C Programming language
 - it is faster than any interpretter based languages like Ruby, Python, etc.,
 - it is also faster than most compiler based programming languages
@@ -364,7 +359,6 @@ tower-cli project list
 - golang remove all confusing features, keeping only useful, non-confusing features
 - golang avoid memory management issues we have in C/C++
 - golang support about 25 keywords
-</pre>
 
 ## Lab - Running your first hello world go program
 Create a file named hello.go with the below content
