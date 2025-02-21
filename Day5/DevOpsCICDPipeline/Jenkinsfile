@@ -17,7 +17,7 @@ pipeline {
                 }
             }
         }
-	stage("Invoke Terraform") {
+	stage("Manual approval") {
 		steps {
 			timeout( time: 5, unit: "MINUTES") {
 			   input message: 'Are we good to perform infrastructure automation ?', ok: 'Yes'
@@ -51,5 +51,13 @@ pipeline {
                 }
             }
         }
-    }
+        stage('Dispose the resource created by Terraform') {
+            steps {
+                script {
+		  dir("Day5/invoking-ansibleplaybook-from-terraform") {
+                    sh "terraform destroy --auto-approve"
+		  }
+                }
+            }
+        }
 }
