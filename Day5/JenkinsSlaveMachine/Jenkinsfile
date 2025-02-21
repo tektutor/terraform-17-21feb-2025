@@ -1,0 +1,64 @@
+#!/usr/bin/env groovy
+
+pipeline {
+    agent {
+        label 'JenkinsSlave'
+    }
+    stages {
+        stage('Build Custom Docker Image') {
+            steps {
+                script {
+		    dir("Day5/CustomDockerAnsibleNodeImages/ubuntu-ansible") {
+		         sh "cp ~/.ssh/id_ed25519.pub authorized_keys"
+		         sh "docker build -t tektutor/ubuntu-ansible:1.0 ."
+			 sh "rm authorized_keys"
+			 sh "docker images"
+		    }
+                }
+            }
+        }
+	stage("Manual approval") {
+		steps {
+			timeout( time: 1, unit: "DAYS") {
+			   input message: 'Are we good to perform infrastructure automation ?', ok: 'Yes'
+			}
+			echo "About to invoke Terraform ..."
+		}
+	}
+        stage('Invoke Terraform Automation Script') {
+            steps {
+                script {
+		  dir("Day5/invoking-ansibleplaybook-from-terraform") {
+                    sh "terraform init"
+		    sh "terraform apply --auto-approve"
+		  }
+                }
+            }
+        }
+        stage('Invoke Ansible Playbook') {
+            steps {
+                script {
+		  dir("Day5/invoking-ansibleplaybook-from-terraform") {
+                    sh "ansible-playbook -i hosts install-nginx-playbook.yml"
+		  }
+                }
+            }
+        }
+        stage('Test if we are able to access web page from provisioned container') {
+            steps {
+                script {
+                    sh "curl http://localhost:8001"
+                }
+            }
+        }
+        stage('Dispose the resource created by Terraform') {
+            steps {
+                script {
+		  dir("Day5/invoking-ansibleplaybook-from-terraform") {
+                    sh "terraform destroy --auto-approve"
+		  }
+                }
+            }
+        }
+   }
+}
