@@ -257,3 +257,14 @@ Script Path has to modified to
 Day5/DevOpsCICDPipeline/Jenkinsfile  
 </pre>
 ![image](https://github.com/user-attachments/assets/63414dfb-aab5-4c3a-ab52-66fb71fa79e1)
+Click "Save" at the bottom
+![image](https://github.com/user-attachments/assets/d45fa93b-ed20-48b0-90de-716667bdc783)
+
+Status
+![image](https://github.com/user-attachments/assets/854db6de-05a7-4d73-8e33-1327f7a87d18)
+![image](https://github.com/user-attachments/assets/afbf186e-fa8e-4cab-a933-f6c97893621b)
+![image](https://github.com/user-attachments/assets/30c359d8-0516-427e-82e4-66e7d3ad6a3e)
+![image](https://github.com/user-attachments/assets/5f1ce0ec-4800-417e-9628-6eff098f2e3f)
+![image](https://github.com/user-attachments/assets/b91e1d36-51cc-4765-9e8b-5bf8d4622a47)
+![image](https://github.com/user-attachments/assets/ec43469d-c6a8-4b08-a265-c78ce11fca74)
+![image](https://github.com/user-attachments/assets/7f790928-1c40-4695-b3f3-bc95c139f1b7)
