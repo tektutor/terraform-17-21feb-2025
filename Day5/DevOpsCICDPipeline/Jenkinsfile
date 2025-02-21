@@ -19,7 +19,7 @@ pipeline {
         }
 	stage("Invoke Terraform") {
 		steps {
-			timeout( time: 5, unit: "Minutes") {
+			timeout( time: 5, unit: "MINUTES") {
 			   input message: 'Are we good to perform infrastructure automation ?', ok: 'Yes'
 			}
 			echo "About to invoke Terraform ..."
