@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/06a409a3-d122-4e53-8575-7c412d65f443)# Day 2
+# Day 2
 
 ## Lab - Building a custom rocky linux ansible node container
 ```
