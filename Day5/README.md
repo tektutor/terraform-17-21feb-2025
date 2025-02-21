@@ -207,3 +207,21 @@ Click "Start using Jenkins"
 ![image](https://github.com/user-attachments/assets/55d7757d-aead-45ca-8d2c-ef98e582b263)
 ![image](https://github.com/user-attachments/assets/78cd113d-9ecb-44a0-8e4b-67b86178ca37)
                                                             
+## Lab - Creating a CI/CD DevOps Pipeline
+
+Open Jenkins Dashboard in RPS Lab machine, chrome web browser
+```
+http://localhost:8080
+```
+Expected output
+![image](https://github.com/user-attachments/assets/6fc5913b-3d17-480d-8f4a-741042319019)
+
+Click "Create job"
+![image](https://github.com/user-attachments/assets/d100ba90-8c24-4809-8883-374e52d496b7)
+Select "Pipeline", under the "Enter an item name" type "DevOps CICD Pipeline"
+![image](https://github.com/user-attachments/assets/21d58d32-5964-43a8-87a7-33f1b6ea601c)
+Click "Ok"
+![image](https://github.com/user-attachments/assets/939b442c-b793-47a7-b42e-f174e8f9c861)
+
+
+
