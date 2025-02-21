@@ -226,7 +226,16 @@ Click "Ok"
 General Section
 ![image](https://github.com/user-attachments/assets/54d633c0-8722-4b8b-9be5-ae99d6a4b015)
 
-Triggers section
+Trigger Section
+![image](https://github.com/user-attachments/assets/088ebc3d-4ad5-4675-9e26-41a1bdeaded0)
+Select "Poll SCM", under Schedule type "H/02 * * * *" to configure polling every 2 minutes once.
+<pre>
+H/02 * * * *  
+</pre>
+![image](https://github.com/user-attachments/assets/15cd722e-b8a8-4073-92a2-8bf794543d62)
+
+
+Pipeline section
 ![image](https://github.com/user-attachments/assets/7b81f0fe-ee3d-43af-8635-9713c77502ba)
 Select "Pipeline script from SCM"
 ![image](https://github.com/user-attachments/assets/08b749dc-2754-4291-adbe-ffcbd45c2ca1)
