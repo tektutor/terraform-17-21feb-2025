@@ -278,6 +278,9 @@ Expected output
 ![image](https://github.com/user-attachments/assets/742969b2-75d5-4e3c-a9c3-63c51e39ee6d)
 ![image](https://github.com/user-attachments/assets/d3285511-525c-4803-ad85-e95a7a725cbb)
 
+## Info - Understanding Ansible Playbook Structure
+![playbook-structure](StructureofAnsiblePlaybook.png)
+
 ## Lab - Running your first ansible ping playbook
 ```
 cd ~/terraform-17-21feb-2025
