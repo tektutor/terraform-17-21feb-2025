@@ -189,4 +189,10 @@ Expected output
 You can copy the initial admin password from the web browser itself as shown below
 ![image](https://github.com/user-attachments/assets/c3f6675f-2e1e-4e4a-abe4-76ead3154de9)
 ![image](https://github.com/user-attachments/assets/30b159db-900c-4790-83b8-734b19ed1ddb)
+![image](https://github.com/user-attachments/assets/6b12456e-d842-4318-8e8e-729cd4b0035e)
+![image](https://github.com/user-attachments/assets/55d0559a-2536-4e2d-8ad3-24771edd5d18)
+![image](https://github.com/user-attachments/assets/ad95a77f-377e-4ee3-8b08-641611a943ad)
+Select "Install suggested plugins"
+![image](https://github.com/user-attachments/assets/7d786bdd-0082-412f-86f7-f228b33fd985)
+![Uploading image.png…]()
 
