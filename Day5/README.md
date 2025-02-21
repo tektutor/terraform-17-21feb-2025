@@ -156,3 +156,9 @@ Expected output
 - Team City
 - Cloudbees ( Enterprise Jenkins )
 - Microsoft Team Foundation Server (TFS)
+
+## Lab - Download Jenkins war file
+Download the Generic Java Package (war) file from the left side (LTS)
+<pre>
+wget https://get.jenkins.io/war-stable/2.492.1/jenkins.war
+</pre>
