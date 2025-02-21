@@ -1,5 +1,10 @@
 # Day 5
 
+## Training Feedback link
+<pre>
+https://survey.zohopublic.com/zs/CLkcVL  
+</pre>  
+
 ## Info - Terraform Modules Overview
 <pre>
 - collection of many terraform configuration files(.tf) files in a dedicated directory
