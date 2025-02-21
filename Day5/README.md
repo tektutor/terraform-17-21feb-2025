@@ -103,6 +103,35 @@ Expected output
   - Prometheus & Grafana
 </pre>
 
+## Continuous Integration (CI) Overview
+<pre>
+- it is a fail-fast engineering process to find issues early 
+- when bugs are detected early during development phase, they are easy to fix
+- cost of fixing the bugs is also relatively cheaper
+- it is similar SCRUM daily stand-up meeting, which is an inspect and adapt meeting
+- the team that follows CI/CD, the engineers would be pushing code to version control several times a day
+- code would be integrated many times a day
+- Jenkins or similar CI/CD server will grab the latest code, they trigger a build, as part of the build, automated test cases would be executed to verify if the new code is as expected, if the new code is breaking any existing functionality.
+- the build that was triggered due to new code integration succeeds, it means no functionality is broken, everything works as expected
+- continous frequent feedback is given by CI/CD builds, eventually improving the code quaility and functional quality
+- CI helps confidently deliver releases in a short amount of time
+- Unit and Integration is the scope of CI
+</pre>
+
+## Continuous Deployment (CD) Overview
+<pre>
+- Once the dev release suceeds all the automated test cases added by dev team, it is automatically promoted for QA testing
+- the dev certified release binaries are deployed automatically to QA environment for further automated QA testing
+- the QA would automate, end to end functionality test, regression test, smoke test, performance test, stress test, component/API test, etc
+</pre>
+
+## Continuous Delivery (CD) Overview
+<pre>
+- the QA certified build(release) is automatically deployed into production or pre-prod environment
+- in the pre-prod environment the customer or the Operations team would verify if the new release is working as expected
+- especially fintech companies, after manual approval the binaries could go live in production environment
+</pre>
+
 ## What is Jenkins?
 - is a build automation server
 - used mainly for CI/CD Builds
@@ -125,5 +154,5 @@ Expected output
 ## Jenkins Alternatives
 - Bamboo
 - Team City
-- Cloudbees
+- Cloudbees ( Enterprise Jenkins )
 - Microsoft Team Foundation Server (TFS)
