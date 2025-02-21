@@ -160,9 +160,21 @@ Expected output
 ## Lab - Download Jenkins war file
 Download the Generic Java Package (war) file from the left side (LTS)
 <pre>
+cd ~/Downloads
 wget https://get.jenkins.io/war-stable/2.492.1/jenkins.war
 </pre>
 
 Expected output
 ![image](https://github.com/user-attachments/assets/066f4a54-d900-40fd-990d-584c96d0c1d9)
 ![image](https://github.com/user-attachments/assets/f37f88a3-2082-4d5a-8150-caaeb3e3b0aa)
+
+## Lab - Launching Jenkins from terminal
+```
+cd ~/Downloads
+java -jar ./jenkins.war
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/f50e515b-7158-4c30-b576-32378d4522bc)
+![image](https://github.com/user-attachments/assets/68a70a4d-568f-45dd-8d32-740320fa519c)
+
