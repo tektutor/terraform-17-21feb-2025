@@ -123,6 +123,9 @@
 - if the Ansible node happens to be a Unix/Linux/Mac/Switches/routers, then it have SSH connection details, login credentials, etc.,
 </pre>
 
+## Info - Ansible High Level Architecture
+![architecture](AnsibleHighLevelArchitecture.png)
+
 ## Info - Installing ansible core in Ubuntu
 ```
 sudo apt update
