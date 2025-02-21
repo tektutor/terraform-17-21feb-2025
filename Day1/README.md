@@ -1,7 +1,6 @@
 # Day 1
 
 ## Provisioner Overview
-<pre>
 - is a Infrastructure as a code tool (Iaac)
 - helps create a 
   - new machine with some OS installed in it
@@ -12,10 +11,8 @@
   - Vagrant
   - AWS Cloudformation
   - Terraform
-</pre>  
 
 ## Configuration Management Overview
-<pre>
 - is one of the devops tools
 - helps automating system admiminstrative tasks like
   - software installation
@@ -41,19 +38,15 @@
   - Ansible
   - Puppet
   - Chef
-</pre>
 
 ## Info - Puppet Overview
-<pre>
 - is a configuration management tool
 - is an alternate to Ansible and Chef
 - follows client/server architecture
 - follows pull based architecture
 - the servers that must be managed by Puppet should be installed with Puppet proprietary agent
-</pre>
 
 ## Ansible Overview
-<pre>
 - is a configuration management tool developed by Michael Deehan in Python
 - the DSL (Domain Specific Language - the language in which automation script is written) used by Ansible is YAML
 - YAML is a superset of JSON(JavaScript Object Notation)
@@ -72,7 +65,6 @@
     - Ansible Tower or Ansible Automation Platform ( Licensed product from Red Hat )
     - developed on to of opensource AWX
     - supports webconsole (GUI)
-</pre>
 
 ## Info - Ansible Modules
 - Ansible modules comes out of the box when we install Ansible in our laptop/desktop
@@ -85,14 +77,11 @@
   - to manage services, we could use service ansible module
 
 ## Info - Ansible ad-hoc command
-<pre>
 - ansible ad-hoc command is just invoking a single ansible module without writing a playbook
 - usually helps us understand what features a individual modules has, it is way we can experiment a module before using them in playbooks
 - each command just invokes one Ansible module
-</pre>
 
 ## Info - Ansible Playbook
-<pre>
 - is a YAML file, hence can be written using any plain text editor of your choice
 - it follows a specific structure or format
 - each Playbook has one or more Play
@@ -100,7 +89,6 @@
 - each Play runs zero to many Tasks
 - each Task runs exactly one Ansible module
 - each Play runs zero to many Roles
-</pre>
 
 ## Info - Ansible Controller Machine ( ACM )
 - the machine where Ansible is installed is called Ansible Controller Machine
@@ -116,12 +104,10 @@
 - it can be Network routers/switches
 
 ## Info - Ansible Inventory
-<pre>
 - it is a text file, who looks somewhat similar INI file
 - it has the connection details of Ansible Nodes
 - if the Ansible node happens to be a Window machine, then it will have WinRM connection details, login credentials, etc
 - if the Ansible node happens to be a Unix/Linux/Mac/Switches/routers, then it have SSH connection details, login credentials, etc.,
-</pre>
 
 ## Info - Ansible High Level Architecture
 ![architecture](AnsibleHighLevelArchitecture.png)
@@ -135,7 +121,6 @@ sudo apt install ansible
 ```
 
 ## Info - What is Linux Distribution?
-<pre>
 For example
 - Ubuntu - is a Linux distribution
 - Fedora - is another Linux distribution
@@ -147,10 +132,8 @@ For example
   - The same set of Linux tools are supported by the above linux OS
   - Shells,bash shell, sh shell, etc.
 - Different Linux distributions support different Package Managers
-</pre>  
 
 ## Info - Package manager
-<pre>
 - is an utility that comes out of box with Linux OS
 - depending on which linux family the OS distribution comes under, they may support different package managers
 - Debian linux family ( package manager - apt or apt-get 0
@@ -163,10 +146,8 @@ For example
   - uninstall softwares
   - update/upgrade/downgrade softwares
   - downloads the compatible installer binary from Repository Servers
-</pre>  
 
 ## Info - Linux Repository Server
-<pre>
 - Each Linux distribution company maintains a website( repository server )
 - The repository server could be JFrog Artifactory, Sonatype Nexus, similar products
 - Ubuntu 24.04, there can many variants
@@ -178,17 +159,14 @@ For example
 - Each repository server will provide processor specific pages to download compatible softwares
 - Each repository server will provide separate repository url for different version of ubuntu 18.04, 20,04, 22.04, 24,04
 - separe page/url for 32-bit/64-bit OS 
-</pre>  
 
 ## Info - Key pairs ( public and private key )
-<pre>
 - For any unix/linux/mac user, we can create a key pair(i.e public and private key)
 - The private key must be retained on the same machine where it was generated
 - The private should never be shared with anyone
 - The key pairs are always unique in nature
 - The public key will only match with a particular private key
 - The public key will be shared to trused unix/linux/mac machines to which one wish to perform ssh login
-</pre>
 
 ## Lab - Cloning TekTutor training repository ( from linux terminal - one time activity )
 ```
