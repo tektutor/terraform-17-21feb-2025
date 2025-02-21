@@ -10,6 +10,41 @@
 - a root module may have zero to many child modules
 </pre>
 
+## Lab - Terraform Root and Child Modules
+```
+cd ~/terraform-17-21feb-2025
+git pull
+cd Day5/terraform-modules
+tree
+terraform init
+terraform plan
+terraform apply --auto-approve
+docker ps
+terraform show
+
+terraform destroy --auto-approve
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/3bfe367c-3e5e-4a2a-a24e-cb821c70f8ec)
+![image](https://github.com/user-attachments/assets/04636db8-6024-4dad-be85-141a8e7820a9)
+
+![image](https://github.com/user-attachments/assets/63850d97-5964-4a13-aa55-2cdb7355b181)
+![image](https://github.com/user-attachments/assets/550ed964-2115-42e4-858c-d7a1351ff6c8)
+![image](https://github.com/user-attachments/assets/290fdd0b-6e47-4a27-930d-ce6502b1e680)
+![image](https://github.com/user-attachments/assets/5daf9085-e563-41b3-b118-3b14b0414fa0)
+
+![image](https://github.com/user-attachments/assets/2bb9a9b8-b705-4781-b0bb-7855ca3e0ae0)
+![image](https://github.com/user-attachments/assets/49729673-d5cc-4624-b454-c0d90f554ae1)
+
+![image](https://github.com/user-attachments/assets/b15db064-3d9f-4039-80ba-cbc961c0382a)
+![image](https://github.com/user-attachments/assets/3eba987e-affd-439c-ac42-b8745fd0b04b)
+![image](https://github.com/user-attachments/assets/735cc554-1b52-4f8e-83f4-38c621d0e960)
+![image](https://github.com/user-attachments/assets/a867f354-8720-4547-b823-95017a23cef4)
+![image](https://github.com/user-attachments/assets/93b91c00-af5c-4e40-8972-f3b21bed5152)
+![image](https://github.com/user-attachments/assets/77b5f3c5-2191-4053-83d2-7af87cacd286)
+
+
 ## Info - Configuration Drift
 <pre>
 - system configurations gradually deviate from their desired or documented state 
