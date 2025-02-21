@@ -182,7 +182,7 @@ For example
 
 ## Info - Key pairs ( public and private key )
 <pre>
-- For any unix/linux/mac user, we can create a key pair(i.e pubilc and private key)
+- For any unix/linux/mac user, we can create a key pair(i.e public and private key)
 - The private key must be retained on the same machine where it was generated
 - The private should never be shared with anyone
 - The key pairs are always unique in nature
